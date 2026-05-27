@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Focus4ward | Articles on Fractional CMO, AI Marketing & B2B Growth</title>
+<meta name="description" content="Articles on Fractional CMO leadership, AI marketing systems, GEO and SEO, and B2B growth, by Miri Blum. Practical playbooks from 18 years in B2B marketing.">
+<meta name="author" content="Miri Blum">
+<link rel="canonical" href="https://focus4ward.co/blog">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://focus4ward.co/blog">
+<meta property="og:title" content="Blog — Focus4ward">
+<meta property="og:description" content="Articles on Fractional CMO leadership, AI marketing systems, GEO and SEO, and B2B growth.">
+<meta property="og:image" content="https://focus4ward.co/images/og-image.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Focus4ward">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blog — Focus4ward">
+<meta name="twitter:description" content="Articles on Fractional CMO leadership and AI marketing systems for B2B growth.">
+<meta name="twitter:image" content="https://focus4ward.co/images/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Blog",
+      "@id": "https://focus4ward.co/blog#blog",
+      "name": "Focus4ward Blog",
+      "url": "https://focus4ward.co/blog",
+      "description": "Articles on Fractional CMO leadership, AI marketing systems, GEO and SEO, and B2B growth, by Miri Blum.",
+      "author": {"@type": "Person", "name": "Miri Blum", "url": "https://focus4ward.co/about"},
+      "publisher": {"@type": "Organization", "name": "Focus4ward", "url": "https://focus4ward.co/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://focus4ward.co/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://focus4ward.co/blog"}
+      ]
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1E2530;--pink:#C9316E;--sand:#F5F0EB;--yellow:#F0C040;--card-dark:#2A3142;--body-dark:rgba(255,255,255,0.88);--body-sand:#4A4540;--border-dark:rgba(255,255,255,0.08)}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+.pk{color:var(--pink)}.yw{color:var(--yellow)}
+.scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
+
+nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
+.nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
+.nav-logo{font-size:16px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;text-decoration:none;flex-shrink:0}
+.nav-logo span{color:var(--pink)}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-cta{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-weight:600;font-size:13px;text-decoration:none;transition:opacity .2s,transform .2s,box-shadow .2s;flex-shrink:0}
+.nav-cta:hover{opacity:.92;transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,49,110,.25)}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;width:36px;height:36px;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:0;flex-shrink:0}
+.nav-toggle span{display:block;width:20px;height:2px;background:#fff;transition:transform .25s,opacity .25s}
+body.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.nav-open .nav-toggle span:nth-child(2){opacity:0}
+body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.eyebrow{display:block;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--yellow);margin-bottom:20px}
+.eyebrow-pink{display:block;font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--pink);margin-bottom:20px}
+.sec{padding:88px 60px}
+.inner{max-width:1120px;margin:0 auto}
+
+.page-hero{background:var(--ink);padding:80px 60px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,49,110,.12);box-shadow:0 0 0 60px rgba(201,49,110,.05),0 0 0 120px rgba(201,49,110,.03);pointer-events:none;animation:slowSpin 90s linear infinite}
+@keyframes slowSpin{to{transform:translateY(-50%) rotate(360deg)}}
+.page-hero-outer{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+.page-hero-inner{max-width:680px}
+.page-hero h1{color:#fff;font-size:54px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-bottom:14px}
+.page-hero p{font-size:18px;color:var(--body-dark);line-height:1.65}
+
+.posts-sec{background:var(--sand)}
+.posts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.post-card{background:#fff;border-radius:10px;padding:36px;border-top:3px solid var(--pink);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+.post-card:hover{transform:translateY(-4px);box-shadow:0 14px 36px rgba(30,37,48,.08)}
+.post-meta{display:flex;align-items:center;gap:12px;margin-bottom:18px;font-size:11px;font-weight:700;color:var(--pink);letter-spacing:1.5px;text-transform:uppercase}
+.post-meta time{color:rgba(61,55,48,.55);font-weight:600;letter-spacing:1px}
+.post-card h2{font-size:22px;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:14px}
+.post-card p{font-size:15px;color:var(--body-sand);line-height:1.65;flex:1;margin-bottom:20px}
+.post-card-cta{font-size:13px;font-weight:600;color:var(--pink);border-bottom:1px solid rgba(201,49,110,.3);padding-bottom:1px;align-self:flex-start}
+.post-card.feature{grid-column:1 / -1;display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center;padding:48px}
+.post-card.feature h2{font-size:30px}
+.post-card.feature p{font-size:16px}
+
+footer{background:#0F1219;padding:64px 60px 32px}
+.foot-inner{max-width:1120px;margin:0 auto}
+.foot-top{display:grid;grid-template-columns:1.4fr 2fr;gap:60px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
+.foot-brand{display:flex;flex-direction:column;gap:16px}
+.foot-logo{font-size:20px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;text-decoration:none;align-self:flex-start}
+.foot-logo span{color:var(--pink)}
+.foot-tagline{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;max-width:300px}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.foot-col h5{font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.foot-col li,.foot-col a{font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;line-height:1.5;transition:color .2s}
+.foot-col a:hover{color:#fff}
+.foot-social{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);text-decoration:none;font-size:13px;line-height:1.5;transition:color .2s}
+.foot-social svg{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+.foot-social:hover{color:#fff}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.foot-copy{font-size:11px;color:rgba(255,255,255,.4)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:translateY(0)}
+.reveal-d1{transition-delay:.08s}
+.reveal-d2{transition-delay:.16s}
+.reveal-d3{transition-delay:.24s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.page-hero::before{animation:none}html{scroll-behavior:auto}}
+
+@media (max-width:768px){
+  nav{padding:0 16px;height:56px}
+  .nav-inner{gap:10px}
+  .nav-toggle{display:flex}
+  .nav-cta{margin-left:auto;font-size:12px;padding:7px 14px}
+  .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px;border-bottom:1px solid var(--border-dark);box-shadow:0 8px 24px rgba(0,0,0,.4);margin-left:0}
+  body.nav-open .nav-links{display:flex}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;font-size:15px;padding:12px 0;color:rgba(255,255,255,.85)}
+  .nav-logo{font-size:14px}
+  .sec,.page-hero{padding:48px 20px}
+  .page-hero h1{font-size:36px}
+  .page-hero p{font-size:15px}
+  .posts-grid{grid-template-columns:1fr;gap:16px}
+  .post-card,.post-card.feature{padding:24px;display:flex;grid-column:auto}
+  .post-card.feature{grid-template-columns:1fr;gap:20px}
+  .post-card.feature > div:nth-child(2) .post-meta{margin-bottom:0;margin-top:4px}
+  .post-card.feature h2{font-size:22px}
+  .post-card.feature p{font-size:15px}
+  .page-hero::before{display:none}
+  footer{padding:40px 20px 24px}
+  .foot-top{display:flex;flex-direction:column;gap:28px;padding-bottom:24px}
+  .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .foot-bottom{flex-direction:column;gap:8px;align-items:flex-start;padding-top:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="scroll-prog" id="scroll-prog"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">FOCUS<span>4</span>WARD</a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/results">Results</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+    </ul>
+    <a href="/contact" class="nav-cta">Book a call</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-outer">
+    <div class="page-hero-inner">
+      <span class="eyebrow reveal">Blog</span>
+      <h1 class="reveal reveal-d1">Articles on B2B marketing,<br>AI, and <span class="pk">growth.</span></h1>
+      <p class="reveal reveal-d2">Practical playbooks from 18 years building marketing engines for B2B SaaS, scale-ups, and global brands. Fractional CMO leadership, AI systems, and the new rules of buyer journeys.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec posts-sec">
+  <div class="inner">
+    <div class="posts-grid">
+
+      <a href="/blog/buying-enterprise-ai-licence-is-not-a-strategy" class="post-card feature reveal reveal-d1">
+        <div>
+          <div class="post-meta"><span>Featured</span> · <time datetime="2026-04-23">23 April 2026</time></div>
+          <h2>Buying an enterprise Claude licence is not an AI strategy.</h2>
+          <p>Almost nobody selling AI content right now is talking about what enterprise AI actually looks like. Marketing automating workflows while sales tracks leads in Excel. IT validating every new tool. Connectivity that doesn't exist. The bottleneck isn't the model. It's the architecture around it.</p>
+          <span class="post-card-cta">Read article →</span>
+        </div>
+        <div>
+          <div class="post-meta"><span>AI · Strategy · Fractional CMO</span></div>
+        </div>
+      </a>
+
+      <a href="/blog/your-b2b-buyers-arent-clicking-anymore" class="post-card reveal reveal-d2">
+        <div class="post-meta"><span>SEO · GEO</span> · <time datetime="2025-10-15">15 October 2025</time></div>
+        <h2>Your B2B buyers aren't clicking anymore. They're asking AI.</h2>
+        <p>SEO isn't dead, but it's evolving fast. The biggest takeaway from the recent Forrester ZeroClick session: as marketers we've been racing to feed the funnel, top and bottom, and ignoring the middle. Here's what to do about it.</p>
+        <span class="post-card-cta">Read article →</span>
+      </a>
+
+      <a href="/blog/top-5-benefits-of-hiring-a-fractional-cmo" class="post-card reveal reveal-d3">
+        <div class="post-meta"><span>Fractional CMO</span> · <time datetime="2025-06-12">12 June 2025</time></div>
+        <h2>The top 5 benefits of hiring a fractional CMO for your business growth.</h2>
+        <p>Hiring a senior marketing leader is a major commitment, especially for growing B2B tech companies, startups, and scale-ups. Here's what a fractional CMO actually changes, and how to know if it's the right fit.</p>
+        <span class="post-card-cta">Read article →</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="/" class="foot-logo">FOCUS<span>4</span>WARD</a>
+        <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li></ul></div>
+        <div class="foot-col"><h5>Reach me</h5><ul>
+          <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
+          <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>
+          <li>Paris · Works globally</li>
+          <li>English · French</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-copy">© 2026 Focus4ward · Miri Blum</div>
+      <div class="foot-copy">Built in Paris</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){const open=document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));
+(function(){const bar=document.getElementById('scroll-prog');if(!bar)return;function upd(){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;bar.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';}window.addEventListener('scroll',upd,{passive:true});upd();})();
+(function(){if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'));return;}const ro=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ro.unobserve(e.target)}})},{threshold:0.12,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));})();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+# Focus4ward
+
+> Marketing leadership and AI systems for B2B growth, by Miri Blum. Fractional CMO and AI Marketing Systems Builder based in Paris, working globally.
+
+Focus4ward provides Fractional CMO services and builds AI-powered marketing systems for B2B companies. Founder Miri Blum has 18 years of B2B marketing experience including senior roles at AWS, Criteo, Brevo, and Aprovall.
+
+The positioning is dual-buyer: for founders who need a CMO, and for CMOs who need AI.
+
+## Pages
+
+- [Home](https://focus4ward.co/): Overview, positioning, and proof
+- [Services](https://focus4ward.co/services): Fractional CMO retainer, AI Readiness Audit, AI Systems Build, Brand and Positioning Sprint
+- [Results](https://focus4ward.co/results): Case studies — Aprovall, Brevo, Assurly, Criteo
+- [About](https://focus4ward.co/about): About Miri Blum, philosophy, career
+- [Blog](https://focus4ward.co/blog): Articles on Fractional CMO, AI marketing, B2B growth
+- [Contact](https://focus4ward.co/contact): Book a call
+
+## About Miri Blum
+
+- Role: Fractional CMO and AI Marketing Systems Builder
+- Based in: Paris, France
+- Languages: English, French
+- Works: Globally
+- Past roles:
+  - VP Global Marketing at Brevo (formerly Sendinblue)
+  - Senior Partner Marketing Manager at AWS (Amazon Web Services)
+  - Head of Brand and Creative at Criteo (during Nasdaq IPO)
+  - Fractional CMO at Aprovall (formerly e-Attestations)
+- Specialties: Fractional CMO, B2B marketing leadership, AI marketing systems, brand strategy, positioning, GTM strategy, demand generation, product marketing, marketing-sales alignment
+
+## Services and engagement models
+
+- **AI Readiness Audit** (2 weeks, fixed fee): Audit of marketing stack, processes, AI gaps. Output: prioritised 90-day roadmap.
+- **AI Systems Build** (2-4 weeks, fixed fee): Custom AI workflows built and handed over with team training. Content factory, competitive intelligence, lead gen engine, SEO/GEO workflow.
+- **Brand and Positioning Sprint** (3 weeks, fixed fee): Positioning, messaging architecture, ICP definition, value proposition.
+- **Fractional CMO retainer** (3-18 months, monthly): Embedded marketing leadership with AI systems built in.
+
+## Notable results
+
+- Aprovall: ↑52% new logo revenue YoY, ↑105% MQLs YoY, ↑771% organic search sessions, ↑224% AI visibility in TPRM category. Recognised in the Gartner 2025 TPRM Market Guide and Forrester 2026 Landscape.
+- Brevo: ↑65% new product MRR, ↑700% social engagement, ↑65% brand uplift, ↑25% YoY growth via campaigns. Led the rebrand from Sendinblue to Brevo.
+- Assurly: 100 paying clients onboarded in 6 months, ↑803% media presence, ↑22% user acquisition CVR, top 100 in the FinTech industry within the first year.
+- Criteo: ↑121% lead gen CVR YoY, ↑602% engagement YoY, ↑77% brand visibility YoY, ↑67% YoY subscriptions on social. Global brand repositioning during Nasdaq IPO across APAC, EMEA, and NAM.
+
+## Contact
+
+- Email: miri@focus4ward.co
+- LinkedIn: https://www.linkedin.com/in/miriblum/
+- Location: Paris, France (works globally)
