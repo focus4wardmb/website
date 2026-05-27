@@ -129,6 +129,9 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .hero-rotate{display:inline-block;transition:opacity .25s ease,transform .25s ease;will-change:opacity,transform}
 .hero-rotate.swap-out{opacity:0;transform:translateY(-4px)}
 @media (prefers-reduced-motion:reduce){.hero-rotate{transition:none}.hero-rotate.swap-out{opacity:1;transform:none}}
+.hero-caret{display:inline-block;width:3px;height:.9em;background:var(--pink);margin-left:5px;vertical-align:-2px;animation:caretBlink 1.05s steps(1) infinite}
+@keyframes caretBlink{50%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.hero-caret{animation:none;opacity:1}}
 
 .hero-sub{font-size:18px;color:var(--body-dark);line-height:1.6;max-width:520px;margin-bottom:28px}
 .hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
@@ -271,6 +274,12 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .close-sec p{font-size:16px;color:var(--body-dark);margin-bottom:40px;position:relative;z-index:1}
 .close-sec .cta-main{position:relative;z-index:1;font-size:16px;padding:15px 40px}
 
+.faq-sec{background:#fff}
+.faq-list{max-width:760px;margin:0 auto}
+.faq-item{border-top:1px solid rgba(0,0,0,.08);padding:28px 0}
+.faq-item:last-child{border-bottom:1px solid rgba(0,0,0,.08)}
+.faq-item h3{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.3}
+.faq-item p{font-size:15px;color:var(--body-sand);line-height:1.7}
 footer{background:#0F1219;padding:64px 60px 32px}
 .foot-inner{max-width:1120px;margin:0 auto}
 .foot-top{display:grid;grid-template-columns:1.4fr 2fr;gap:60px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
@@ -390,7 +399,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <div class="hero-outer">
     <div class="hero-inner">
       <span class="eyebrow reveal">Fractional CMO · AI Systems · B2B Marketing</span>
-      <h1 class="reveal reveal-d1" id="heroH1">For <span class="hero-rotate hero-who">founders</span> who<br><span class="hero-rotate hero-prefix">need a</span> <span class="pk hero-rotate hero-need">CMO.</span></h1>
+      <h1 class="reveal reveal-d1" id="heroH1">For <span class="hero-rotate hero-who">founders</span> who<br><span class="hero-rotate hero-prefix">need a</span> <span class="pk hero-rotate hero-need">CMO.</span><span class="hero-caret" aria-hidden="true"></span></h1>
       <p class="hero-sub reveal reveal-d2">Marketing leadership and AI systems for B2B growth. The systems that turn marketing into a real growth function.</p>
       <div class="hero-tags reveal reveal-d3">
         <span class="tag">Strategy first</span>
@@ -680,6 +689,30 @@ footer{background:#0F1219;padding:64px 60px 32px}
     </div>
   </div>
 </section>
+
+<section class="sec faq-sec">
+  <div class="inner">
+    <span class="eyebrow-pink reveal">Questions</span>
+    <h2 class="reveal reveal-d1" style="color:var(--ink)">Fractional CMO, <span class="pk">answered.</span></h2>
+    <div class="faq-list">
+      <div class="faq-item reveal reveal-d1"><h3>What is a fractional CMO?</h3><p>A senior marketing leader who runs your marketing part-time and on a flexible basis, instead of as a full-time hire. You get CMO-level strategy and execution without the salary, the equity, or the long search. It fits B2B companies past product-market fit that need senior thinking before they can justify a full-time CMO.</p></div>
+      <div class="faq-item reveal reveal-d1"><h3>What's the difference between a CMO and a fractional CMO?</h3><p>Same seniority, different commitment. A CMO is a full-time executive on your payroll. A fractional CMO brings the same strategic depth part-time or by project, embedded in your team but without the permanent overhead. For many growing companies, fractional is how they get CMO-calibre leadership years before a full-time role makes sense.</p></div>
+      <div class="faq-item reveal reveal-d1"><h3>What does a fractional CMO cost?</h3><p>Far less than a full-time CMO's salary, benefits, and equity, because you pay only for the time you need. Engagements range from a two-week audit to a multi-month embedded retainer, so the cost scales to the scope. The point is senior leadership you can access now, sized to where the business actually is.</p></div>
+      <div class="faq-item reveal reveal-d1"><h3>When should you hire a fractional CMO?</h3><p>When you have product-market fit but marketing is still figuring itself out, or when you have a capable team that needs senior direction during a strategic moment. If you are carrying the marketing gap yourself, or your CMO has no time to think or build, that is the signal.</p></div>
+      <div class="faq-item reveal reveal-d1"><h3>What is an AI marketing system?</h3><p>The layer above the tools: shared context, workflows, and measurement that make AI actually move the business instead of sitting in individual chat windows. I build these so they run inside your team and keep working after the engagement ends.</p></div>
+    </div>
+  </div>
+</section>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a fractional CMO?","acceptedAnswer":{"@type":"Answer","text":"A senior marketing leader who runs your marketing part-time and on a flexible basis, instead of as a full-time hire. You get CMO-level strategy and execution without the salary, the equity, or the long search. It fits B2B companies past product-market fit that need senior thinking before they can justify a full-time CMO."}},
+{"@type":"Question","name":"What is the difference between a CMO and a fractional CMO?","acceptedAnswer":{"@type":"Answer","text":"Same seniority, different commitment. A CMO is a full-time executive on your payroll. A fractional CMO brings the same strategic depth part-time or by project, embedded in your team but without the permanent overhead."}},
+{"@type":"Question","name":"What does a fractional CMO cost?","acceptedAnswer":{"@type":"Answer","text":"Far less than a full-time CMO's salary, benefits, and equity, because you pay only for the time you need. Engagements range from a two-week audit to a multi-month embedded retainer, so the cost scales to the scope."}},
+{"@type":"Question","name":"When should you hire a fractional CMO?","acceptedAnswer":{"@type":"Answer","text":"When you have product-market fit but marketing is still figuring itself out, or when you have a capable team that needs senior direction during a strategic moment."}},
+{"@type":"Question","name":"What is an AI marketing system?","acceptedAnswer":{"@type":"Answer","text":"The layer above the tools: shared context, workflows, and measurement that make AI actually move the business instead of sitting in individual chat windows, built to run inside your team and keep working after the engagement ends."}}
+]}
+</script>
 
 <section class="close-sec">
   <h2 class="reveal">Let's build something <span class="pk">real.</span></h2>
