@@ -32,8 +32,26 @@
   </url>
   <url>
     <loc>https://focus4ward.co/blog</loc>
-    <lastmod>2026-04-29</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://focus4ward.co/blog/your-b2b-buyers-arent-clicking-anymore</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://focus4ward.co/blog/buying-enterprise-ai-licence-is-not-a-strategy</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://focus4ward.co/blog/top-5-benefits-of-hiring-a-fractional-cmo</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
