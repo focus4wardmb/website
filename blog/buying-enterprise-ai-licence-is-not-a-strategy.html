@@ -49,6 +49,46 @@
   "keywords": "AI strategy, enterprise AI, AI adoption, B2B AI, fractional CMO, AI marketing systems"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is buying an enterprise AI licence an AI strategy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The licence gives everyone access to a model, which is the easy part. The strategy is the architecture around it: the data the model can reach, the workflows it plugs into, the guardrails, the accountability, and the operating habits that make it stick."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do enterprise AI rollouts stall after the licence is signed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The pattern is almost always the same: procurement buys seats, a champion runs a prompting workshop, a few power users go deep, and six months later usage flatlines. The licence was never the problem. The architecture around it was missing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does \"architecture around the model\" actually mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Five layers, each needing an owner: data access (which systems the model can read), workflows (the specific repeating jobs you automate), guardrails (what runs unsupervised versus human-in-the-loop), accountability (who signs off when output ships), and habits (how people use it every week)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "We've paid for the licence and see no value. What now?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Don't buy a different licence. Start one layer down: pick three concrete workflows, each with a named owner and a measurable output, get them trusted, then expand from there."
+      }
+    }
+  ]
+}
+</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{--ink:#1E2530;--pink:#C9316E;--sand:#F5F0EB;--yellow:#F0C040;--card-dark:#2A3142;--body-dark:rgba(255,255,255,0.88);--body-sand:#4A4540;--border-dark:rgba(255,255,255,0.08)}
@@ -149,6 +189,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
   .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
   .foot-bottom{flex-direction:column;gap:8px;align-items:flex-start;padding-top:16px}
 }
+.faq-block{margin:56px 0 0;border-top:1px solid rgba(0,0,0,.08);padding-top:8px}
+.faq-block > h2{font-size:26px;margin:24px 0 8px}
+.faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.faq-item:last-child{border-bottom:none}
+.faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 </style>
 </head>
 <body>
@@ -239,6 +285,26 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <h2>The bottom line</h2>
     <p>Frontier model access is the price of entry, not the strategy. The strategy is what you build around it: which data the model touches, which workflows it owns, who is accountable, and how it shows up in the operating rhythm of the team.</p>
     <p>Buying more licences won't fix that. Architecting for it will.</p>
+
+    <section class="faq-block" aria-label="Frequently asked questions">
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>Is buying an enterprise AI licence an AI strategy?</h3>
+        <p>No. The licence gives everyone access to a model, which is the easy part. The strategy is the architecture around it: the data the model can reach, the workflows it plugs into, the guardrails, the accountability, and the operating habits that make it stick.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why do enterprise AI rollouts stall after the licence is signed?</h3>
+        <p>The pattern is almost always the same: procurement buys seats, a champion runs a prompting workshop, a few power users go deep, and six months later usage flatlines. The licence was never the problem. The architecture around it was missing.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What does &quot;architecture around the model&quot; actually mean?</h3>
+        <p>Five layers, each needing an owner: data access (which systems the model can read), workflows (the specific repeating jobs you automate), guardrails (what runs unsupervised versus human-in-the-loop), accountability (who signs off when output ships), and habits (how people use it every week).</p>
+      </div>
+      <div class="faq-item">
+        <h3>We&#x27;ve paid for the licence and see no value. What now?</h3>
+        <p>Don&#x27;t buy a different licence. Start one layer down: pick three concrete workflows, each with a named owner and a measurable output, get them trusted, then expand from there.</p>
+      </div>
+    </section>
 
     <div class="cta-block">
       <h3>Want to architect AI properly across your marketing engine?</h3>
