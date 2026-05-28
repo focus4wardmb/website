@@ -64,7 +64,7 @@ body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-we
 
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
 .nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
-.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:36px}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:32px}
 .nav-logo img{height:100%;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
 .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s}
@@ -139,13 +139,15 @@ footer{background:#0F1219;padding:64px 60px 32px}
   body.nav-open .nav-links{display:flex}
   .nav-links li{width:100%}
   .nav-links a{display:block;font-size:15px;padding:12px 0;color:rgba(255,255,255,.85)}
-  .nav-logo{font-size:14px}
+  .nav-logo{height:24px}
   .sec,.page-hero{padding:48px 20px}
   .page-hero h1{font-size:36px}
   .page-hero p{font-size:15px}
   .posts-grid{grid-template-columns:1fr;gap:16px}
   .post-card,.post-card.feature{padding:24px;display:flex;grid-column:auto}
   .post-card.feature{grid-template-columns:1fr;gap:20px}
+  .post-card.feature > div:nth-child(1){order:2}
+  .post-card.feature > div:nth-child(2){order:1}
   .post-card.feature > div:nth-child(2) .post-meta{margin-bottom:0;margin-top:4px}
   .post-card.feature h2{font-size:22px}
   .post-card.feature p{font-size:15px}

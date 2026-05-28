@@ -98,7 +98,7 @@ body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-we
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
 .nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
-.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:36px}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:32px}
 .nav-logo img{height:100%;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
 .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s}
@@ -173,7 +173,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
   body.nav-open .nav-links{display:flex}
   .nav-links li{width:100%}
   .nav-links a{display:block;font-size:15px;padding:12px 0;color:rgba(255,255,255,.85)}
-  .nav-logo{font-size:14px}
+  .nav-logo{height:24px}
   .article-header{padding:48px 20px 36px}
   .article-header h1{font-size:28px}
   .article-header .lede{font-size:16px}
@@ -195,6 +195,15 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
+.share-block{margin:48px 0 16px;padding:22px 0;border-top:1px solid rgba(0,0,0,.08);border-bottom:1px solid rgba(0,0,0,.08);display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.share-label{font-size:12px;font-weight:700;color:var(--ink);letter-spacing:1.5px;text-transform:uppercase}
+.share-buttons{display:flex;gap:10px;align-items:center}
+.share-btn{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--sand);color:var(--ink);text-decoration:none;border:1px solid rgba(0,0,0,.06);transition:background .2s,color .2s,transform .2s;cursor:pointer;padding:0}
+.share-btn:hover{background:var(--pink);color:#fff;transform:translateY(-1px);border-color:var(--pink)}
+.share-btn svg{width:17px;height:17px;fill:currentColor}
+.share-fb{font-size:12px;color:var(--pink);font-weight:600;opacity:0;transition:opacity .25s}
+.share-fb.on{opacity:1}
+@media (max-width:600px){.share-block{gap:12px}.share-btn{width:42px;height:42px}}
 </style>
 </head>
 <body>
@@ -292,6 +301,17 @@ footer{background:#0F1219;padding:64px 60px 32px}
         <p>Ask the engines directly. Query ChatGPT, Perplexity, Claude, and Google AI Overviews with questions like &quot;who is the best fractional CMO for B2B SaaS in Paris?&quot; If your name doesn&#x27;t come up, or the AI gets your positioning wrong, that&#x27;s the gap to close.</p>
       </div>
     </section>
+
+    <div class="share-block">
+      <span class="share-label">Share this article</span>
+      <div class="share-buttons">
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffocus4ward.co%2Fblog%2Fyour-b2b-buyers-arent-clicking-anymore" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg></a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?text=Your%20B2B%20buyers%20aren%27t%20clicking%20anymore.%20They%27re%20asking%20AI.&url=https%3A%2F%2Ffocus4ward.co%2Fblog%2Fyour-b2b-buyers-arent-clicking-anymore" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="share-btn" href="mailto:?subject=Your%20B2B%20buyers%20aren%27t%20clicking%20anymore.%20They%27re%20asking%20AI.&body=Thought you might find this useful: https%3A%2F%2Ffocus4ward.co%2Fblog%2Fyour-b2b-buyers-arent-clicking-anymore" aria-label="Share by email"><svg viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zM20 6l-8 5-8-5h16zm0 12H4V8l8 5 8-5z"/></svg></a>
+        <button class="share-btn" onclick="(function(b){navigator.clipboard.writeText('https://focus4ward.co/blog/your-b2b-buyers-arent-clicking-anymore').then(function(){var fb=b.parentElement.parentElement.querySelector('.share-fb');if(fb){fb.classList.add('on');setTimeout(function(){fb.classList.remove('on')},2000)}})})(this)" aria-label="Copy link"><svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></button>
+      </div>
+      <span class="share-fb">Link copied</span>
+    </div>
 
     <div class="cta-block">
       <h3>Want help auditing your AI visibility and content engine?</h3>
