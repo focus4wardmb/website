@@ -73,8 +73,8 @@ body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-we
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
 .nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
-.nav-logo{font-size:16px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;text-decoration:none;flex-shrink:0}
-.nav-logo span{color:var(--pink)}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:36px}
+.nav-logo img{height:100%;width:auto;display:block}
 .nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
 .nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s}
 .nav-links a:hover,.nav-links a.active{color:#fff}
@@ -131,8 +131,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .foot-inner{max-width:1120px;margin:0 auto}
 .foot-top{display:grid;grid-template-columns:1.4fr 2fr;gap:60px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
 .foot-brand{display:flex;flex-direction:column;gap:16px}
-.foot-logo{font-size:20px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase;text-decoration:none;align-self:flex-start}
-.foot-logo span{color:var(--pink)}
+.foot-logo{text-decoration:none;align-self:flex-start;display:inline-block}
+.foot-logo img{height:40px;width:auto;display:block}
 .foot-tagline{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;max-width:300px}
 .foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .foot-col h5{font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
@@ -163,7 +163,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo">FOCUS<span>4</span>WARD</a>
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/services">Services</a></li>
       <li><a href="/results">Results</a></li>
@@ -279,7 +279,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/" class="foot-logo">FOCUS<span>4</span>WARD</a>
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
         <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
       </div>
       <div class="foot-cols">
