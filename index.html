@@ -129,8 +129,8 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .inline-cta-band a:hover{opacity:.92;transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,49,110,.3)}
 .inline-cta-band.on-sand{background:var(--sand)}
 
-.hero{background:var(--ink) url('/images/patterns/circles-right.png') right center/contain no-repeat;padding:48px 60px 32px;position:relative;overflow:hidden}
-.hero::before{content:none}
+.hero{background:var(--ink);padding:48px 60px 32px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url('/images/patterns/circles-right.png') right center/contain no-repeat;opacity:.28;pointer-events:none}
 .hero::after{content:none}
 @keyframes slowSpin{to{transform:translateY(-50%) rotate(360deg)}}
 .hero-outer{max-width:1120px;margin:0 auto;position:relative;z-index:1}
