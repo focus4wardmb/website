@@ -33,6 +33,12 @@
   to = "/blog/:slug.html"
   status = 200
 
+# French pages — /fr/page-slug → /fr/page-slug.html
+[[redirects]]
+  from = "/fr/:slug"
+  to = "/fr/:slug.html"
+  status = 200
+
 # Security headers
 [[headers]]
   for = "/*"
