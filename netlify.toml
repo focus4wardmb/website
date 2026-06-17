@@ -33,6 +33,27 @@
   to = "/blog/:slug.html"
   status = 200
 
+# French pages — pretty URLs under /fr/
+[[redirects]]
+  from = "/fr/services"
+  to = "/fr/services.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/results"
+  to = "/fr/results.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/about"
+  to = "/fr/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/contact"
+  to = "/fr/contact.html"
+  status = 200
+
 # Security headers
 [[headers]]
   for = "/*"
