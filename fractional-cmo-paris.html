@@ -131,6 +131,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
 .nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
@@ -238,6 +240,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
@@ -255,6 +258,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="page-hero-outer">
@@ -315,6 +320,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <p class="reveal reveal-d1">If your marketing function should be moving the business and isn't, a thirty-minute call is the fastest way to find out why.</p>
   <a href="/contact" class="cta-main reveal reveal-d2">Book a call</a>
 </section>
+
+</main>
 
 <footer>
   <div class="foot-inner">

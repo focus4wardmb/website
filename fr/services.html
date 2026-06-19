@@ -103,6 +103,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
@@ -268,6 +270,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
@@ -285,6 +288,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="page-hero-outer">
@@ -430,6 +435,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <p class="reveal reveal-d1">Un diagnostic de deux semaines qui vous donne de la clarté quelle que soit la suite. Aucun engagement à continuer.</p>
   <a href="/fr/contact" class="cta-white reveal reveal-d2">Faisons le point</a>
 </section>
+
+</main>
 
 <footer>
   <div class="foot-inner">
