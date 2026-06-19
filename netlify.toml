@@ -54,6 +54,16 @@
   to = "/fr/contact.html"
   status = 200
 
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/confidentialite"
+  to = "/fr/confidentialite.html"
+  status = 200
+
 # Security headers
 [[headers]]
   for = "/*"
