@@ -75,7 +75,17 @@
         {"@type": "Question", "name": "Do all engagements start with an audit?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every engagement opens with a two-week diagnosis of strategy, team, stack, and positioning before anything gets built. The audit gives you clarity regardless of what comes next, and there is no commitment to continue once it is delivered."}},
         {"@type": "Question", "name": "How much does a fractional CMO cost compared to hiring in-house?", "acceptedAnswer": {"@type": "Answer", "text": "A fractional CMO costs less than a full-time CMO at the same seniority. A French in-house hire carries social charges, benefits, equipment, and overhead that push the real cost to roughly 1.5 times the headline salary. A fractional engagement is scaled to your actual need with no employer charges, and it starts the day you sign rather than after a six to nine month search and notice period."}},
         {"@type": "Question", "name": "How quickly will I see results?", "acceptedAnswer": {"@type": "Answer", "text": "Senior leadership is in place from day one, and sprint engagements produce visible output inside the first month. Each sprint leaves something running when it ends, not a deck of recommendations. A traditional in-house hire takes six to nine months to source, onboard, and ramp before the work begins."}},
-        {"@type": "Question", "name": "Which areas does the work cover?", "acceptedAnswer": {"@type": "Answer", "text": "Six fronts: brand and positioning, GTM and growth, AI-powered systems, team and leadership, product marketing, and KPIs and reporting. Across both tracks, AI is wired into the engagement from day one rather than added on top."}}
+        {"@type": "Question", "name": "Which areas does the work cover?", "acceptedAnswer": {"@type": "Answer", "text": "Six fronts: brand and positioning, GTM and growth, AI-powered systems, team and leadership, product marketing, and KPIs and reporting. Across both tracks, AI is wired into the engagement from day one rather than added on top."}},
+        {"@type": "Question", "name": "Will a fractional CMO be as committed as a full-time hire?", "acceptedAnswer": {"@type": "Answer", "text": "Commitment shows up in ownership, not in hours logged. I take results, not tasks, and I build inside your team rather than billing you by the deliverable. A full-time hire can give you forty hours and still hand you a deck. I give you fewer hours and something that runs when I leave."}},
+        {"@type": "Question", "name": "Is this better than hiring a CMO and an AI specialist separately?", "acceptedAnswer": {"@type": "Answer", "text": "Two hires means two salaries, two ramp-ups, and a handoff between strategy and build where most AI projects die. A separate AI specialist builds in a vacuum: strong systems with no marketing judgment underneath. I build the AI with the marketing baked in from the ground up, because the strategy and the systems sit in the same hands. One person owns the plan and the thing that runs it."}},
+        {"@type": "Question", "name": "How effective can a part-time CMO be at driving growth?", "acceptedAnswer": {"@type": "Answer", "text": "Senior marketing time is worth more by the day than a junior team is by the month. The growth comes from clarity at the top and systems underneath, not from headcount. At Aprovall that meant new-logo revenue up 52% and MQLs up 105% year on year, built with a small team, not a big one."}},
+        {"@type": "Question", "name": "Is the AI actually proven, or still experimental?", "acceptedAnswer": {"@type": "Answer", "text": "I don't ship pilots. The systems I build are the ones I run in my own business every day: content engines, competitive intelligence, lead gen workflows. They go into production with your team trained on them, documented, and running before I leave. AI in the engine, not a demo on a slide."}},
+        {"@type": "Question", "name": "How complex is it to integrate with our existing stack?", "acceptedAnswer": {"@type": "Answer", "text": "I start from the tools you already have, not a rip-and-replace. The audit maps your stack first, then the build connects what's there before adding anything new. The point is fewer disconnected tools, not more."}},
+        {"@type": "Question", "name": "Will the AI systems deliver measurable ROI?", "acceptedAnswer": {"@type": "Answer", "text": "Every engagement ends with KPIs and reporting wired in, so you can see what the systems return and what they cost. If a workflow isn't earning its place, you'll know. Marketing that can't tell you whether it's working isn't finished."}},
+        {"@type": "Question", "name": "Will this fit a company my size and my budget?", "acceptedAnswer": {"@type": "Answer", "text": "The engagement is scaled to your need, not a fixed package. A sprint fixes one gap fast, a retainer goes deeper over time, and you start with a two-week audit before committing to either. You don't buy a full-time function before you can use one."}},
+        {"@type": "Question", "name": "Will time zones get in the way of working together?", "acceptedAnswer": {"@type": "Answer", "text": "I'm based in Paris, and I've worked with global teams across time zones throughout my career. The systems I build run on their own, so progress doesn't wait for a shared calendar window. Where live time matters, I anchor to yours."}},
+        {"@type": "Question", "name": "Your case studies are big names. Can a smaller company expect similar results?", "acceptedAnswer": {"@type": "Answer", "text": "The numbers come from the method, not the logo. I've worked with smaller companies as much as big names, and I adapt to your size, stage, and resources. Assurly went from seed funding to market in six months with the same approach: positioning first, then a system that runs. The work scales down to your stage, not just up to an enterprise one."}},
+        {"@type": "Question", "name": "Is there transparent evidence behind these results?", "acceptedAnswer": {"@type": "Answer", "text": "The named case studies carry the real situation and named people behind the testimonials. I report results in percentages rather than absolute figures on purpose: it shows the impact while protecting my clients' confidential numbers, and I'll protect yours the same way. Ask in the call and I'll walk you through how a result was built."}}
       ]
     },
     {
@@ -94,6 +104,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
@@ -259,12 +271,13 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/services" class="active">Services</a></li>
       <li><a href="/results">Results</a></li>
@@ -275,6 +288,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="page-hero-outer">
@@ -412,6 +427,16 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <div class="faq-item reveal"><h3>How much does a fractional CMO cost compared to hiring in-house?</h3><p>A fractional CMO costs less than a full-time CMO at the same seniority. A French in-house hire carries social charges, benefits, equipment, and overhead that push the real cost to roughly 1.5 times the headline salary. A fractional engagement is scaled to your actual need with no employer charges, and it starts the day you sign rather than after a six to nine month search and notice period.</p></div>
     <div class="faq-item reveal"><h3>How quickly will I see results?</h3><p>Senior leadership is in place from day one, and sprint engagements produce visible output inside the first month. Each sprint leaves something running when it ends, not a deck of recommendations. A traditional in-house hire takes six to nine months to source, onboard, and ramp before the work begins.</p></div>
     <div class="faq-item reveal"><h3>Which areas does the work cover?</h3><p>Six fronts: brand and positioning, GTM and growth, AI-powered systems, team and leadership, product marketing, and KPIs and reporting. Across both tracks, AI is wired into the engagement from day one rather than added on top.</p></div>
+    <div class="faq-item reveal"><h3>Will a fractional CMO be as committed as a full-time hire?</h3><p>Commitment shows up in ownership, not in hours logged. I take results, not tasks, and I build inside your team rather than billing you by the deliverable. A full-time hire can give you forty hours and still hand you a deck. I give you fewer hours and something that runs when I leave.</p></div>
+    <div class="faq-item reveal"><h3>Is this better than hiring a CMO and an AI specialist separately?</h3><p>Two hires means two salaries, two ramp-ups, and a handoff between strategy and build where most AI projects die. A separate AI specialist builds in a vacuum: strong systems with no marketing judgment underneath. I build the AI with the marketing baked in from the ground up, because the strategy and the systems sit in the same hands. One person owns the plan and the thing that runs it.</p></div>
+    <div class="faq-item reveal"><h3>How effective can a part-time CMO be at driving growth?</h3><p>Senior marketing time is worth more by the day than a junior team is by the month. The growth comes from clarity at the top and systems underneath, not from headcount. At Aprovall that meant new-logo revenue up 52% and MQLs up 105% year on year, built with a small team, not a big one.</p></div>
+    <div class="faq-item reveal"><h3>Is the AI actually proven, or still experimental?</h3><p>I don't ship pilots. The systems I build are the ones I run in my own business every day: content engines, competitive intelligence, lead gen workflows. They go into production with your team trained on them, documented, and running before I leave. AI in the engine, not a demo on a slide.</p></div>
+    <div class="faq-item reveal"><h3>How complex is it to integrate with our existing stack?</h3><p>I start from the tools you already have, not a rip-and-replace. The audit maps your stack first, then the build connects what's there before adding anything new. The point is fewer disconnected tools, not more.</p></div>
+    <div class="faq-item reveal"><h3>Will the AI systems deliver measurable ROI?</h3><p>Every engagement ends with KPIs and reporting wired in, so you can see what the systems return and what they cost. If a workflow isn't earning its place, you'll know. Marketing that can't tell you whether it's working isn't finished.</p></div>
+    <div class="faq-item reveal"><h3>Will this fit a company my size and my budget?</h3><p>The engagement is scaled to your need, not a fixed package. A sprint fixes one gap fast, a retainer goes deeper over time, and you start with a two-week audit before committing to either. You don't buy a full-time function before you can use one.</p></div>
+    <div class="faq-item reveal"><h3>Will time zones get in the way of working together?</h3><p>I'm based in Paris, and I've worked with global teams across time zones throughout my career. The systems I build run on their own, so progress doesn't wait for a shared calendar window. Where live time matters, I anchor to yours.</p></div>
+    <div class="faq-item reveal"><h3>Your case studies are big names. Can a smaller company expect similar results?</h3><p>The numbers come from the method, not the logo. I've worked with smaller companies as much as big names, and I adapt to your size, stage, and resources. Assurly went from seed funding to market in six months with the same approach: positioning first, then a system that runs. The work scales down to your stage, not just up to an enterprise one.</p></div>
+    <div class="faq-item reveal"><h3>Is there transparent evidence behind these results?</h3><p>The named case studies carry the real situation and named people behind the testimonials. I report results in percentages rather than absolute figures on purpose: it shows the impact while protecting my clients' confidential numbers, and I'll protect yours the same way. Ask in the call and I'll walk you through how a result was built.</p></div>
   </div>
 </section>
 
@@ -421,16 +446,18 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <a href="/contact" class="cta-white reveal reveal-d2">Book a call</a>
 </section>
 
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
         <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li></ul></div>
-        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li><li><a href="/privacy">Privacy</a></li></ul></div>
         <div class="foot-col"><h5>Reach me</h5><ul>
           <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
           <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>

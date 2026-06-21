@@ -77,6 +77,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 .mobile-only{display:none}
 
@@ -233,12 +235,13 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Aller au contenu</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/fr/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+    <a href="/fr/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/fr/services">Services</a></li>
       <li><a href="/fr/results" class="active">Résultats</a></li>
@@ -250,6 +253,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="page-hero-outer">
@@ -274,7 +279,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <div class="inner">
 
     <div class="case-block">
-      <div class="case-logo-row reveal"><img src="images/aprovall.png" alt="Aprovall" class="case-logo"><div class="case-logo-divider"></div></div>
+      <div class="case-logo-row reveal"><img src="images/aprovall.webp" alt="Aprovall" class="case-logo"><div class="case-logo-divider"></div></div>
       <div class="case-grid">
         <div class="case-left reveal reveal-d1">
           <span class="case-tag">Aprovall · B2B SaaS · TPRM</span>
@@ -309,7 +314,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <div class="inline-cta-band mobile-only"><a href="/fr/contact">Faisons le point</a></div>
 
     <div class="case-block">
-      <div class="case-logo-row reveal"><img src="images/brevo.png" alt="Brevo" class="case-logo"><div class="case-logo-divider"></div></div>
+      <div class="case-logo-row reveal"><img src="images/brevo.webp" alt="Brevo" class="case-logo"><div class="case-logo-divider"></div></div>
       <div class="case-grid">
         <div class="case-left reveal reveal-d1">
           <span class="case-tag">Brevo · Série B · MarTech</span>
@@ -342,7 +347,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <div class="inline-cta-band mobile-only"><a href="/fr/contact">Faisons le point</a></div>
 
     <div class="case-block">
-      <div class="case-logo-row reveal"><img src="images/assurly.png" alt="Assurly" class="case-logo"><div class="case-logo-divider"></div></div>
+      <div class="case-logo-row reveal"><img src="images/assurly.webp" alt="Assurly" class="case-logo"><div class="case-logo-divider"></div></div>
       <div class="case-grid">
         <div class="case-left reveal reveal-d1">
           <span class="case-tag">Assurly · Seed · InsurTech</span>
@@ -375,7 +380,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <div class="inline-cta-band mobile-only"><a href="/fr/contact">Faisons le point</a></div>
 
     <div class="case-block">
-      <div class="case-logo-row reveal"><img src="images/criteo.png" alt="Criteo" class="case-logo"><div class="case-logo-divider"></div></div>
+      <div class="case-logo-row reveal"><img src="images/criteo.webp" alt="Criteo" class="case-logo"><div class="case-logo-divider"></div></div>
       <div class="case-grid">
         <div class="case-left reveal reveal-d1">
           <span class="case-tag">Criteo · IPO · AdTech</span>
@@ -424,16 +429,18 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <a href="/fr/contact" class="cta-pink reveal reveal-d2">Faisons le point</a>
 </section>
 
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/fr/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+        <a href="/fr/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
         <p class="foot-tagline">Direction marketing et systèmes IA pour des entreprises B2B en croissance.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col"><h5>Le travail</h5><ul><li><a href="/fr/services">Services</a></li><li><a href="/fr/results">Résultats</a></li><li><a href="/blog">Blog</a></li></ul></div>
-        <div class="foot-col"><h5>À propos</h5><ul><li><a href="/fr/about">À propos de Miri</a></li><li><a href="/fr/contact">Faisons le point</a></li><li><a href="/results">English version</a></li></ul></div>
+        <div class="foot-col"><h5>À propos</h5><ul><li><a href="/fr/about">À propos de Miri</a></li><li><a href="/fr/contact">Faisons le point</a></li><li><a href="/fr/confidentialite">Confidentialité</a></li><li><a href="/results">English version</a></li></ul></div>
         <div class="foot-col"><h5>Me contacter</h5><ul>
           <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
           <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>

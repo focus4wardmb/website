@@ -95,6 +95,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
 .nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
@@ -194,6 +196,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .share-buttons{display:flex;flex-direction:column;gap:8px;align-items:center}
 .share-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--sand);color:var(--ink);text-decoration:none;border:1px solid rgba(0,0,0,.06);transition:background .2s,color .2s,transform .2s;cursor:pointer;padding:0}
 .share-btn:hover,.share-btn:focus{background:var(--pink);color:#fff;transform:translateY(-1px);border-color:var(--pink);outline:none}
+.share-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .share-btn svg{width:16px;height:16px;fill:currentColor}
 .share-fb{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--ink);color:#fff;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s}
 .share-fb.on{opacity:1}
@@ -234,12 +237,13 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </script>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/services">Services</a></li>
       <li><a href="/results">Results</a></li>
@@ -251,6 +255,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <header class="article-header">
   <div class="article-header-inner">
@@ -266,7 +272,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <div class="article-content">
     <a href="/blog" class="back-to-blog">← Back to all articles</a>
 
-    <img src="/images/blog/citation-is-the-new-ranking.png" alt="Editorial illustration of an AI chat-bubble citation rising in front of a faded SERP of blue links" style="width:100%;border-radius:10px;margin:4px 0 16px;display:block">
+    <img src="/images/blog/citation-is-the-new-ranking.webp" alt="Editorial illustration of an AI chat-bubble citation rising in front of a faded SERP of blue links" style="width:100%;border-radius:10px;margin:4px 0 16px;display:block">
 
     <h2>What changed</h2>
     <p>Google's market share dropped below 90% for the first time in 2024. ChatGPT has more than 500 million weekly users. Perplexity is roughly doubling year over year. And the buyer most likely to be in your funnel, the research-led senior executive with no patience for ten blue links, is the one moving fastest to AI-first search.</p>
@@ -353,7 +359,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
     </div>
 
     <div class="author-card">
-      <img src="/images/miri.png" alt="Miri Blum">
+      <img src="/images/miri.webp" alt="Miri Blum">
       <div class="author-card-info">
         <h4><a href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px" aria-label="Miri Blum on LinkedIn">Miri Blum <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:var(--pink);flex-shrink:0" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg></a></h4>
         <p>Fractional CMO and AI Marketing Systems Builder · 18 years in B2B · Ex-AWS, Criteo, Brevo</p>
@@ -362,16 +368,18 @@ footer{background:#0F1219;padding:64px 60px 32px}
   </div>
 </article>
 
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
         <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li><li><a href="/glossary">Glossary</a></li></ul></div>
-        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li><li><a href="/privacy">Privacy</a></li></ul></div>
         <div class="foot-col"><h5>Reach me</h5><ul>
           <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
           <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>

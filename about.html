@@ -41,7 +41,7 @@
       "name": "Miri Blum",
       "jobTitle": "Fractional CMO and AI Marketing Systems Builder",
       "url": "https://focus4ward.co/about",
-      "image": "https://focus4ward.co/images/miri.png",
+      "image": "https://focus4ward.co/images/miri.webp",
       "sameAs": ["https://www.linkedin.com/in/miriblum/"],
       "worksFor": {"@type": "Organization", "name": "Focus4ward", "url": "https://focus4ward.co/"},
       "alumniOf": [
@@ -80,6 +80,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
@@ -254,12 +256,13 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/services">Services</a></li>
       <li><a href="/results">Results</a></li>
@@ -271,9 +274,11 @@ footer{background:#0F1219;padding:64px 60px 32px}
   </div>
 </nav>
 
+<main id="main">
+
 <section class="about-hero">
   <div class="about-hero-grid">
-    <div class="about-photo reveal"><img src="images/miri.png" alt="Miri Blum, Fractional CMO and AI Marketing Systems Builder"></div>
+    <div class="about-photo reveal"><img src="images/miri.webp" alt="Miri Blum, Fractional CMO and AI Marketing Systems Builder"></div>
     <div class="about-intro">
       <span class="eyebrow reveal">About Miri Blum</span>
       <h1 class="reveal reveal-d1">Senior marketing leader.<br>Hands-on <span class="pk">builder.</span></h1>
@@ -377,22 +382,22 @@ footer{background:#0F1219;padding:64px 60px 32px}
       <div class="test-card reveal reveal-d1">
         <p class="test-quote">"We had a great product and no way to tell the world about it. We needed to evolve: new clients, new markets, a new identity that matched our ambitions. We brought Miri in for a rename and rebrand. She ended up building our entire marketing function from scratch, from positioning to pipeline to the systems that keep it running."</p>
         <div class="test-bottom">
-          <div class="test-author"><img src="images/emmanuel.png" alt="" class="test-photo"><div class="test-id"><div class="test-name">Emmanuel Poidevin</div><div class="test-role">Founder and CEO</div></div></div>
-          <img src="images/aprovall.png" alt="Aprovall" class="test-logo">
+          <div class="test-author"><img src="images/emmanuel.webp" alt="" class="test-photo"><div class="test-id"><div class="test-name">Emmanuel Poidevin</div><div class="test-role">Founder and CEO</div></div></div>
+          <img src="images/aprovall.webp" alt="Aprovall" class="test-logo">
         </div>
       </div>
       <div class="test-card reveal reveal-d2">
         <p class="test-quote">"Miri shaped our 360 marketing plan, drove our rebrand and website relaunch, and created a clearer, stronger identity. She improved how marketing and sales connect and brought thoughtful leadership and consistent results. A great match for any SaaS marketing role."</p>
         <div class="test-bottom">
-          <div class="test-author"><img src="images/pascal.png" alt="" class="test-photo"><div class="test-id"><div class="test-name">Pascal Petit</div><div class="test-role">Founder and CEO</div></div></div>
-          <img src="images/thynk.png" alt="Thynk" class="test-logo">
+          <div class="test-author"><img src="images/pascal.webp" alt="" class="test-photo"><div class="test-id"><div class="test-name">Pascal Petit</div><div class="test-role">Founder and CEO</div></div></div>
+          <img src="images/thynk.webp" alt="Thynk" class="test-logo">
         </div>
       </div>
       <div class="test-card reveal reveal-d3">
         <p class="test-quote">"Miri has been mentoring our marketing team and has been a great partner. She delivered a clear audit, identified key improvements, and helped us build and carry out a strong marketing strategy. Across lead gen, branding, and positioning, she brings valuable tools and guidance."</p>
         <div class="test-bottom">
-          <div class="test-author"><img src="images/xavier.png" alt="" class="test-photo"><div class="test-id"><div class="test-name">Xavier de Boisredon</div><div class="test-role">Co-founder and CEO</div></div></div>
-          <img src="images/castordoc.png" alt="CastorDoc" class="test-logo">
+          <div class="test-author"><img src="images/xavier.webp" alt="" class="test-photo"><div class="test-id"><div class="test-name">Xavier de Boisredon</div><div class="test-role">Co-founder and CEO</div></div></div>
+          <img src="images/castordoc.webp" alt="CastorDoc" class="test-logo">
         </div>
       </div>
     </div>
@@ -415,16 +420,18 @@ footer{background:#0F1219;padding:64px 60px 32px}
   <a href="/contact" class="cta-main reveal reveal-d2">Book a call</a>
 </section>
 
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
         <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li></ul></div>
-        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li><li><a href="/privacy">Privacy</a></li></ul></div>
         <div class="foot-col"><h5>Reach me</h5><ul>
           <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
           <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>

@@ -60,6 +60,8 @@
 html{scroll-behavior:smooth}
 body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
 .pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
 .scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
 
 nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
@@ -160,12 +162,13 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <div class="scroll-prog" id="scroll-prog"></div>
 
 <nav>
   <div class="nav-inner">
-    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
     <ul class="nav-links">
       <li><a href="/services">Services</a></li>
       <li><a href="/results">Results</a></li>
@@ -176,6 +179,8 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="page-hero">
   <div class="page-hero-outer">
@@ -199,7 +204,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
           <span class="post-card-cta">Read article →</span>
         </div>
         <div>
-          <img src="/images/blog/buying-enterprise-ai-licence-is-not-a-strategy.png" alt="" class="feature-thumb">
+          <img src="/images/blog/buying-enterprise-ai-licence-is-not-a-strategy.webp" alt="Buying an enterprise AI licence is not a strategy" class="feature-thumb">
           <div class="post-meta"><span>AI · Strategy · Fractional CMO</span></div>
         </div>
       </a>
@@ -229,7 +234,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/what-does-a-fractional-cmo-do" class="post-card reveal reveal-d2">
-        <img src="/images/blog/what-does-a-fractional-cmo-do.png" alt="" class="post-thumb">
+        <img src="/images/blog/what-does-a-fractional-cmo-do.webp" alt="What does a fractional CMO do" class="post-thumb">
         <div class="post-meta"><span>Fractional CMO</span> · <time datetime="2026-06-15">15 June 2026</time></div>
         <h2>What does a fractional CMO do?</h2>
         <p>A senior marketing leader who owns your marketing function part-time. Not an agency, not an advisor who only makes slides. The real scope, the first 90 days, when a founder actually needs one, and what it is not.</p>
@@ -237,7 +242,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/the-ai-maturity-ladder" class="post-card reveal reveal-d2">
-        <img src="/images/blog/the-ai-maturity-ladder.png" alt="" class="post-thumb">
+        <img src="/images/blog/the-ai-maturity-ladder.webp" alt="The AI maturity ladder" class="post-thumb">
         <div class="post-meta"><span>AI &amp; Strategy</span> · <time datetime="2026-06-12">12 June 2026</time></div>
         <h2>The AI maturity ladder.</h2>
         <p>AI maturity isn't measured in tools owned. Four levels: Prompt-curious, Tooled, Systematic, Compounding. The six dimensions that actually measure it, the cross-team trap that caps most stacks at Level 2, and why most teams self-rate two levels above where they are.</p>
@@ -245,7 +250,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/rename-vs-rebrand" class="post-card reveal reveal-d2">
-        <img src="/images/blog/rename-vs-rebrand.png" alt="" class="post-thumb">
+        <img src="/images/blog/rename-vs-rebrand.webp" alt="Rename vs rebrand" class="post-thumb">
         <div class="post-meta"><span>Brand &amp; Positioning</span> · <time datetime="2026-06-12">12 June 2026</time></div>
         <h2>Rename or rebrand?</h2>
         <p>A rename fixes a name that holds you back. A rebrand fixes a meaning that stopped landing. The tick-box diagnostic that tells founders which project they actually need, from the marketer who piloted the Sendinblue to Brevo rename.</p>
@@ -253,7 +258,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/citation-is-the-new-ranking" class="post-card reveal reveal-d2">
-        <img src="/images/blog/citation-is-the-new-ranking.png" alt="" class="post-thumb">
+        <img src="/images/blog/citation-is-the-new-ranking.webp" alt="Citation is the new ranking" class="post-thumb">
         <div class="post-meta"><span>SEO &amp; GEO</span> · <time datetime="2026-05-28">28 May 2026</time></div>
         <h2>Citation is the new ranking.</h2>
         <p>B2B buyers are starting to query AI engines instead of Google. The SEO playbook still works, but it is no longer enough. Citation share now matters more than rank position. Three rewrites that triple AI citation rate, and the five moves B2B brands should run on now.</p>
@@ -261,7 +266,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/the-day-one-consideration-list" class="post-card reveal reveal-d2">
-        <img src="/images/blog/the-day-one-consideration-list.png" alt="" class="post-thumb">
+        <img src="/images/blog/the-day-one-consideration-list.webp" alt="The day-one consideration list" class="post-thumb">
         <div class="post-meta"><span>Brand &amp; Positioning</span> · <time datetime="2026-05-27">27 May 2026</time></div>
         <h2>Enterprise buyers don't shortlist. They confirm.</h2>
         <p>Mid-market asks who to evaluate. Enterprise asks who's already on the list, and that list is built long before the buyer has the problem. How brands land on the Day-One Consideration List, and why selling on features loses the enterprise deal.</p>
@@ -269,7 +274,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/your-b2b-buyers-arent-clicking-anymore" class="post-card reveal reveal-d3">
-        <img src="/images/blog/your-b2b-buyers-arent-clicking-anymore.png" alt="" class="post-thumb">
+        <img src="/images/blog/your-b2b-buyers-arent-clicking-anymore.webp" alt="Why your B2B buyers aren't clicking anymore" class="post-thumb">
         <div class="post-meta"><span>SEO · GEO</span> · <time datetime="2025-10-15">15 October 2025</time></div>
         <h2>Your B2B buyers aren't clicking anymore. They're asking AI.</h2>
         <p>SEO isn't dead, but it's evolving fast. The biggest takeaway from the recent Forrester ZeroClick session: as marketers we've been racing to feed the funnel, top and bottom, and ignoring the middle. Here's what to do about it.</p>
@@ -277,7 +282,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       </a>
 
       <a href="/blog/top-5-benefits-of-hiring-a-fractional-cmo" class="post-card reveal reveal-d3">
-        <img src="/images/blog/top-5-benefits-of-hiring-a-fractional-cmo.png" alt="" class="post-thumb">
+        <img src="/images/blog/top-5-benefits-of-hiring-a-fractional-cmo.webp" alt="Top 5 benefits of hiring a fractional CMO" class="post-thumb">
         <div class="post-meta"><span>Fractional CMO</span> · <time datetime="2025-06-12">12 June 2025</time></div>
         <h2>The top 5 benefits of hiring a fractional CMO for your business growth.</h2>
         <p>Hiring a senior marketing leader is a major commitment, especially for growing B2B tech companies, startups, and scale-ups. Here's what a fractional CMO actually changes, and how to know if it's the right fit.</p>
@@ -288,16 +293,18 @@ footer{background:#0F1219;padding:64px 60px 32px}
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="foot-inner">
     <div class="foot-top">
       <div class="foot-brand">
-        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.png" alt="Focus4ward"></a>
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
         <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li></ul></div>
-        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li><li><a href="/privacy">Privacy</a></li></ul></div>
         <div class="foot-col"><h5>Reach me</h5><ul>
           <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
           <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>
