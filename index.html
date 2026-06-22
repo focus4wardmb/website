@@ -181,6 +181,9 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .statement-body{max-width:680px}
 .statement-body p{font-size:17px;line-height:1.65;color:var(--body-sand);margin-bottom:18px}
 .statement-body p:last-child{margin-bottom:0}
+.statement-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+.statement-pull{margin:0;font-size:25px;font-weight:700;line-height:1.4;color:var(--ink);border-left:3px solid var(--pink);padding-left:24px}
+@media(max-width:768px){.statement-grid{grid-template-columns:1fr;gap:24px}.statement-pull{font-size:21px}}
 
 .pain-sec{background:var(--sand);position:relative;overflow:hidden}
 .pain-sec::after{content:none}
@@ -485,12 +488,16 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
 <section class="sec statement-sec">
   <div class="inner">
-    <span class="eyebrow-pink reveal">A safe bet</span>
-    <h2 class="reveal reveal-d1">The defensible call.</h2>
-    <div class="statement-body">
-      <p class="reveal reveal-d2">The marketing here was built across companies like Criteo, AWS, and Brevo, then proven again at Aprovall: an invisible 16-year-old brand turned into a demand engine in 15 months. The names on the logos are the same names behind your work.</p>
-      <p class="reveal reveal-d2">Fractional is the lower-risk version of a senior hire, not the cheaper compromise. No six-month search, no equity, no mis-hire to unwind. You start with a two-week audit and decide from there.</p>
-      <p class="reveal reveal-d3">Nobody gets second-guessed for bringing in the person who has already done it.</p>
+    <div class="statement-grid">
+      <div>
+        <span class="eyebrow-pink reveal">A safe bet</span>
+        <h2 class="reveal reveal-d1">The defensible call.</h2>
+        <div class="statement-body">
+          <p class="reveal reveal-d2">The marketing here was built across companies like Criteo, AWS, and Brevo, then proven again at Aprovall: an invisible 16-year-old brand turned into a demand engine in 15 months. The names on the logos are the same names behind your work.</p>
+          <p class="reveal reveal-d2">Fractional is the lower-risk version of a senior hire, not the cheaper compromise. No six-month search, no equity, no mis-hire to unwind. You start with a two-week audit and decide from there.</p>
+        </div>
+      </div>
+      <blockquote class="statement-pull reveal reveal-d3">Nobody gets second-guessed for bringing in the person who has already done it.</blockquote>
     </div>
   </div>
 </section>
@@ -554,12 +561,16 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
 <section class="sec statement-sec on-sand">
   <div class="inner">
-    <span class="eyebrow-pink reveal">Getting started</span>
-    <h2 class="reveal reveal-d1">Starting is the easy part.</h2>
-    <div class="statement-body">
-      <p class="reveal reveal-d2">No deck, no pitch, no procurement marathon. We start with one 30-minute call to see if the situation is one I can actually move.</p>
-      <p class="reveal reveal-d2">If it is, the first step is an audit, not a contract you can't get out of. Two weeks, a clear read on where marketing stands, yours to keep whatever you decide next.</p>
-      <p class="reveal reveal-d3">I build alongside your team, not from a distance. You won't spend the first month explaining your business to a consultant. You'll spend it watching things get built.</p>
+    <div class="statement-grid">
+      <div>
+        <span class="eyebrow-pink reveal">Getting started</span>
+        <h2 class="reveal reveal-d1">Starting is the easy part.</h2>
+        <div class="statement-body">
+          <p class="reveal reveal-d2">No deck, no pitch, no procurement marathon. We start with one 30-minute call to see if the situation is one I can actually move.</p>
+          <p class="reveal reveal-d2">If it is, the first step is an audit, not a contract you can't get out of. Two weeks, a clear read on where marketing stands, yours to keep whatever you decide next.</p>
+        </div>
+      </div>
+      <blockquote class="statement-pull reveal reveal-d3">I build alongside your team, not from a distance. You won't spend the first month explaining your business to a consultant. You'll spend it watching things get built.</blockquote>
     </div>
   </div>
 </section>
