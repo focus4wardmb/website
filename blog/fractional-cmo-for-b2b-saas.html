@@ -190,6 +190,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 .share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
 .share-label{display:none}
@@ -356,19 +362,19 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
     <section class="faq-block" aria-label="Frequently asked questions">
       <h2>Frequently asked questions</h2>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What is the difference between a fractional CMO and a full-time CMO for a B2B SaaS startup?</h3>
         <p>A fractional CMO provides senior marketing leadership part-time, typically two to three days per week, without the cost and commitment of a full-time hire. For a SaaS startup at seed to Series A stage, the relevant differences are speed (no six-month search), flexibility (the engagement scales with the company), and cost (typically 30 to 50 percent of a full-time CMO's total compensation package). The trade-off is availability: a fractional CMO is not embedded full-time and is not the right model when marketing requires daily operational oversight of a large team.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How does a fractional CMO approach PLG versus sales-led growth in SaaS?</h3>
         <p>The approach starts with reading the data rather than assuming. A fractional CMO reviews activation rates, product usage patterns, ICP win/loss data, and the current sales motion before recommending a direction. In a PLG motion, marketing focuses on acquisition, activation, and community. In a sales-led motion, marketing focuses on pipeline quality, account-based marketing, and sales enablement. Most SaaS companies at seed to Series A are in a hybrid state, and the fractional CMO's job is to identify which motion the data supports and design the function around it.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Which SaaS metrics should a fractional CMO own?</h3>
         <p>A fractional CMO typically owns or co-owns: CAC by channel and cohort, pipeline coverage and velocity (for sales-led companies), activation rate (for PLG companies), and the marketing-influenced revenue share. NRR falls under shared accountability, not direct marketing ownership, but a senior CMO tracks it because it reflects how well marketing is acquiring the right customers. MQL volume and top-of-funnel traffic are reported but are not the primary accountability metrics.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How long does a fractional CMO engagement typically last for a B2B SaaS company?</h3>
         <p>Most B2B SaaS fractional CMO engagements run three to twelve months, with the most common pattern being three months of intensive foundation-building (positioning, metrics framework, GTM design) followed by a six to nine-month execution retainer. The engagement ends when the company is ready to hire a full-time CMO and the transition is managed, or when the fractional CMO has built the function to a point where a junior or mid-level team can execute with light senior oversight.</p>
       </div>

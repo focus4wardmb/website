@@ -190,6 +190,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 .share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
 .share-label{display:none}
@@ -318,19 +324,19 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
     <section class="faq-block" aria-label="Frequently asked questions">
       <h2>Frequently asked questions</h2>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>When is it too early to hire a fractional CMO?</h3>
         <p>A fractional CMO is a function-building role, not a freelance demand-generation resource. If the company has not found product-market fit, or if the ICP is still undefined, the challenge is earlier-stage than a CMO-level engagement can address. The minimum viable condition is a product that sells to an identifiable buyer, and at least one growth decision where senior marketing judgment would change the outcome.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How long does a fractional CMO engagement typically last?</h3>
         <p>Most engagements run between three and eighteen months. Short engagements tend to be project-specific: pre-fundraise narrative, market-entry scoping, or an urgent positioning fix. Longer engagements are embedded retainers where the fractional CMO is the de facto head of marketing through a growth phase. The most common arc is six to twelve months: long enough to build strategy and systems, short enough to transition cleanly to a permanent hire.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What is the difference between a fractional CMO and a marketing consultant?</h3>
         <p>A consultant recommends. A fractional CMO executes. A consultant typically delivers a report or strategy document and steps back. A fractional CMO owns the function: they manage the team, make decisions week to week, and are accountable for marketing output. Embedded, not external.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Can a fractional CMO help with fundraising preparation?</h3>
         <p>Yes, and this is one of the clearest ROI cases. Investors evaluate market positioning and category narrative before they evaluate the deck. A fractional CMO builds the proof points, the market framing, and the content signals that make due diligence easier and the raise conversation sharper. In companies preparing for Series A or B, the six to twelve months before the raise is the right window to start.</p>
       </div>

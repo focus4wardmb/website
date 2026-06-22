@@ -197,6 +197,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 .share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
 .share-label{display:none}
@@ -386,19 +392,19 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
     <section class="faq-block" aria-label="Frequently asked questions">
       <h2>Frequently asked questions</h2>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How much does a fractional CMO cost per month?</h3>
         <p>A fractional CMO is priced on a day-rate model. The monthly cost is the day rate multiplied by the number of days committed per month. Most engagements start at two to four days per month. Senior fractional CMOs command day rates that reflect their seniority and sector depth. The total monthly cost is typically a fraction of the fully-loaded cost of a full-time senior marketing hire at the same level.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Is a fractional CMO cheaper than a full-time CMO?</h3>
         <p>Per day, a fractional CMO is often more expensive than the equivalent per-day cost of a full-time CMO. Per engagement, the comparison is different. A full-time CMO carries employer charges (approximately 45% on top of gross salary in France, per URSSAF), executive search fees, benefits, and exit risk. A fractional CMO carries none of those overhead costs. For a company that needs senior marketing leadership but not a full-time headcount, the fractional model is typically more cost-effective in the first one to two years.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What drives the day-rate range for a fractional CMO?</h3>
         <p>Four factors drive the range: seniority and track record, sector depth, geography, and engagement structure. A CMO with a verifiable record of scaling B2B companies commands a different rate than a generalist. Sector expertise shortens ramp time and is priced accordingly. Longer commitments typically unlock a better rate than short diagnostic engagements.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How does a fractional CMO cost compare to a marketing agency retainer?</h3>
         <p>They are structured differently and not directly comparable. An agency retainer covers a team working on execution: campaigns, content, paid media. A fractional CMO covers one senior person who owns the marketing function: strategy, priorities, team alignment, leadership decisions. The fractional CMO typically costs less than a full senior agency retainer, while owning something the agency does not: the function itself, not just a project within it.</p>
       </div>

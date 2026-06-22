@@ -167,6 +167,12 @@ h1{font-size:54px}h2{font-size:42px}
 .faq-item{border-top:1px solid rgba(0,0,0,.08);padding:24px 0}
 .faq-item:last-child{border-bottom:1px solid rgba(0,0,0,.08)}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:15px;color:var(--body-sand);line-height:1.65}
 
 footer{background:#0F1219;padding:64px 60px 32px}
@@ -416,10 +422,10 @@ footer{background:#0F1219;padding:64px 60px 32px}
 <section class="faq-sec">
   <div class="faq-list">
     <h2 class="reveal">Questions fréquentes</h2>
-    <div class="faq-item reveal"><h3>Ces études de cas viennent-elles de missions en fractional ou de postes à temps plein ?</h3><p>Les deux. La mission Aprovall était un rôle de fractional CMO sur environ 15 mois. Les résultats Brevo, Criteo et Assurly viennent de postes de direction marketing en interne, plus tôt dans un parcours de 18 ans. Le fil rouge reste le même : marque, positionnement, GTM et demande construits à partir d'un point de départ faible ou inexistant.</p></div>
-    <div class="faq-item reveal"><h3>De quels types d'entreprises ces résultats proviennent-ils ?</h3><p>Des entreprises tech B2B, à différents stades et sur différentes catégories : InsurTech en seed (Assurly), SaaS TPRM en série A (Aprovall), MarTech en série B (Brevo), et une société AdTech jusqu'à son IPO au Nasdaq (Criteo). Le schéma commun : un produit solide bridé par un marketing faible.</p></div>
-    <div class="faq-item reveal"><h3>Combien de temps faut-il pour obtenir ce genre de résultats ?</h3><p>Tout dépend du point de départ. Assurly est passée de la levée seed au marché avec 100 clients payants en six mois. Aprovall est passée d'une marque invisible à un moteur de demande complet en 15 mois, jusqu'à figurer dans le Gartner 2025 TPRM Market Guide et le Forrester 2026 Landscape. Les missions sprint plus courtes produisent des résultats visibles dès le premier mois.</p></div>
-    <div class="faq-item reveal"><h3>Le travail se limite-t-il aux rebrandings et au positionnement ?</h3><p>Non. Les rebrandings en font partie (e-Attestations devenue Aprovall, Sendinblue devenue Brevo), mais les missions ont aussi construit la génération de demande full-funnel, le CRM et l'attribution, le product marketing, la stratégie partenaires, et des workflows IA sur le contenu, le SEO, le GEO et la veille concurrentielle.</p></div>
+    <details class="faq-item reveal"><summary>Ces études de cas viennent-elles de missions en fractional ou de postes à temps plein ?</summary><p>Les deux. La mission Aprovall était un rôle de fractional CMO sur environ 15 mois. Les résultats Brevo, Criteo et Assurly viennent de postes de direction marketing en interne, plus tôt dans un parcours de 18 ans. Le fil rouge reste le même : marque, positionnement, GTM et demande construits à partir d'un point de départ faible ou inexistant.</p></details>
+    <details class="faq-item reveal"><summary>De quels types d'entreprises ces résultats proviennent-ils ?</summary><p>Des entreprises tech B2B, à différents stades et sur différentes catégories : InsurTech en seed (Assurly), SaaS TPRM en série A (Aprovall), MarTech en série B (Brevo), et une société AdTech jusqu'à son IPO au Nasdaq (Criteo). Le schéma commun : un produit solide bridé par un marketing faible.</p></details>
+    <details class="faq-item reveal"><summary>Combien de temps faut-il pour obtenir ce genre de résultats ?</summary><p>Tout dépend du point de départ. Assurly est passée de la levée seed au marché avec 100 clients payants en six mois. Aprovall est passée d'une marque invisible à un moteur de demande complet en 15 mois, jusqu'à figurer dans le Gartner 2025 TPRM Market Guide et le Forrester 2026 Landscape. Les missions sprint plus courtes produisent des résultats visibles dès le premier mois.</p></details>
+    <details class="faq-item reveal"><summary>Le travail se limite-t-il aux rebrandings et au positionnement ?</summary><p>Non. Les rebrandings en font partie (e-Attestations devenue Aprovall, Sendinblue devenue Brevo), mais les missions ont aussi construit la génération de demande full-funnel, le CRM et l'attribution, le product marketing, la stratégie partenaires, et des workflows IA sur le contenu, le SEO, le GEO et la veille concurrentielle.</p></details>
   </div>
 </section>
 

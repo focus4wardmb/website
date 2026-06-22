@@ -195,6 +195,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 .share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
 .share-label{display:none}
@@ -345,19 +351,19 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
     <section class="faq-block" aria-label="Frequently asked questions">
       <h2>Frequently asked questions</h2>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What is an AI maturity model for marketing teams?</h3>
         <p>An AI maturity model for marketing teams measures how deeply AI is embedded in how the team works, not how many tools it owns. The Focus4ward AI maturity ladder has four levels: Level 0 Prompt-curious (individuals use AI, the company does not), Level 1 Tooled (licences purchased, no operating model), Level 2 Systematic (shared context, owned workflows, one measured result), and Level 3 Compounding (the system improves every cycle and crosses team boundaries).</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Why do most marketing teams overestimate their AI maturity?</h3>
         <p>Because they count tools instead of measuring the layer around them. A team with enterprise licences, several custom GPTs and an AI notetaker looks mature on paper. The maturity test is different: does the AI know the company's context, do workflows run end-to-end, is the IP versioned, is there a before-and-after metric, and does the capability survive when the strongest AI user is on holiday? In Focus4ward audits, most marketing teams self-rate two levels above where they actually sit.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What is the difference between buying AI tools and having an AI strategy?</h3>
         <p>Buying AI tools is procurement: licences, seats and subscriptions. An AI strategy is an operating model: who owns the standard of use, what context the AI has access to, which workflows run through it end-to-end, and how results are measured. Tool access without an operating model is Level 1 on the AI maturity ladder. You can buy your way into Level 1. You cannot buy your way out of it.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How does a marketing team move from Tooled to Systematic?</h3>
         <p>Three moves. First, appoint an owner for how AI gets used, not just who gets access. Second, encode shared context: brand, ICP and ways of working written down in a form a model can use, not trapped in one person's prompt history. Third, pick one workflow, run it end-to-end through AI, and track one metric before and after. Brief-to-first-draft cycle time is the strongest starter metric.</p>
       </div>

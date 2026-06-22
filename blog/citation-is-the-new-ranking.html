@@ -190,6 +190,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
 .faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
 .faq-item:last-child{border-bottom:none}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
 .share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
 .share-label{display:none}
@@ -323,19 +329,19 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
     <section class="faq-block" aria-label="Frequently asked questions">
       <h2>Frequently asked questions</h2>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>What is generative engine optimization (GEO)?</h3>
         <p>Generative engine optimization (GEO) is the practice of making content so that AI engines like ChatGPT, Perplexity, Gemini, and Claude cite it as a source when generating answers. GEO is not a replacement for SEO. It is SEO plus AIO (AI Optimization). Traditional SEO ranks pages on a SERP. GEO gets pages cited inside an AI-generated answer.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Is GEO replacing SEO?</h3>
         <p>No. Both feed off the same foundation: clear intent, structured content, entity recognition, technical health. The difference is at the surface. Traditional SEO still drives a large share of B2B discovery. GEO is additive, not substitutive. The brands that win in the next five years are the ones treating GEO as SEO plus AIO, not as the next algorithm to game.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>Which AI engines should B2B brands optimize for first?</h3>
         <p>The two with the highest share of B2B buyer queries today: ChatGPT and Perplexity. ChatGPT is hybrid (training data plus live web fetch), so it rewards both long-game footprint and fresh indexable content. Perplexity is search-first, so it rewards indexability, freshness, and structured content. Optimizing for those two covers most of the practical citation surface.</p>
       </div>
-      <div class="faq-item">
+      <details class="faq-item">
         <h3>How do you measure GEO success?</h3>
         <p>Track citation share, not rank position. Query 20 to 50 buyer-intent prompts across ChatGPT, Perplexity, and Gemini monthly. Count how often your brand or URL is cited. Pair with AI-referred conversion rate (filter GA4 by referrer: openai.com, perplexity.ai, chat.openai.com, claude.ai, gemini.google.com) and AI-referred traffic share. AI-referred conversion typically runs four to twenty-three times higher than organic, so quality matters more than volume early on.</p>
       </div>

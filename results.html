@@ -162,6 +162,12 @@ h1{font-size:54px}h2{font-size:42px}
 .faq-item{border-top:1px solid rgba(0,0,0,.08);padding:24px 0}
 .faq-item:last-child{border-bottom:1px solid rgba(0,0,0,.08)}
 .faq-item h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
 .faq-item p{font-size:15px;color:var(--body-sand);line-height:1.65}
 
 footer{background:#0F1219;padding:64px 60px 32px}
@@ -410,10 +416,10 @@ footer{background:#0F1219;padding:64px 60px 32px}
 <section class="faq-sec">
   <div class="faq-list">
     <h2 class="reveal">Frequently asked</h2>
-    <div class="faq-item reveal"><h3>Are these case studies from fractional or full-time roles?</h3><p>They span both. The Aprovall engagement was a fractional CMO role over roughly 15 months. The Brevo, Criteo, and Assurly results came from senior in-house marketing leadership earlier in an 18-year career. The throughline is the same: brand, positioning, GTM, and demand built from a weak or missing starting point.</p></div>
-    <div class="faq-item reveal"><h3>What types of companies are these results from?</h3><p>B2B technology companies across stages and categories: seed-stage InsurTech (Assurly), Series A TPRM SaaS (Aprovall), Series B MarTech (Brevo), and an AdTech company through its Nasdaq IPO (Criteo). The common pattern is a strong product held back by weak marketing.</p></div>
-    <div class="faq-item reveal"><h3>How long does it take to see results like these?</h3><p>It depends on the starting point. Assurly went from seed funding to market with 100 paying clients in six months. Aprovall moved from an invisible brand to a full demand engine over 15 months, ending in the Gartner 2025 TPRM Market Guide and the Forrester 2026 Landscape. Shorter sprint engagements produce visible output inside the first month.</p></div>
-    <div class="faq-item reveal"><h3>Is the work only rebrands and positioning?</h3><p>No. Rebrands are part of it (e-Attestations to Aprovall, Sendinblue to Brevo), but the engagements also built full-funnel demand generation, CRM and attribution, product marketing, partner strategy, and AI workflows across content, SEO, GEO, and competitor intelligence.</p></div>
+    <details class="faq-item reveal"><summary>Are these case studies from fractional or full-time roles?</summary><p>They span both. The Aprovall engagement was a fractional CMO role over roughly 15 months. The Brevo, Criteo, and Assurly results came from senior in-house marketing leadership earlier in an 18-year career. The throughline is the same: brand, positioning, GTM, and demand built from a weak or missing starting point.</p></details>
+    <details class="faq-item reveal"><summary>What types of companies are these results from?</summary><p>B2B technology companies across stages and categories: seed-stage InsurTech (Assurly), Series A TPRM SaaS (Aprovall), Series B MarTech (Brevo), and an AdTech company through its Nasdaq IPO (Criteo). The common pattern is a strong product held back by weak marketing.</p></details>
+    <details class="faq-item reveal"><summary>How long does it take to see results like these?</summary><p>It depends on the starting point. Assurly went from seed funding to market with 100 paying clients in six months. Aprovall moved from an invisible brand to a full demand engine over 15 months, ending in the Gartner 2025 TPRM Market Guide and the Forrester 2026 Landscape. Shorter sprint engagements produce visible output inside the first month.</p></details>
+    <details class="faq-item reveal"><summary>Is the work only rebrands and positioning?</summary><p>No. Rebrands are part of it (e-Attestations to Aprovall, Sendinblue to Brevo), but the engagements also built full-funnel demand generation, CRM and attribution, product marketing, partner strategy, and AI workflows across content, SEO, GEO, and competitor intelligence.</p></details>
   </div>
 </section>
 
