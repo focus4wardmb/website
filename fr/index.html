@@ -185,6 +185,12 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .statement-body{max-width:680px}
 .statement-body p{font-size:17px;line-height:1.65;color:var(--body-sand);margin-bottom:18px}
 .statement-body p:last-child{margin-bottom:0}
+.statement-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center}
+.statement-pull{margin:0;font-size:25px;font-weight:700;line-height:1.4;color:var(--ink);border-left:3px solid var(--pink);padding-left:24px}
+.statement-illo{width:100%;max-width:230px;height:auto;display:block;margin:0 auto}
+.statement-sec.intermezzo{padding-top:46px;padding-bottom:46px}
+.statement-sec.intermezzo .statement-body p{font-size:16px}
+@media(max-width:768px){.statement-grid{grid-template-columns:1fr;gap:24px}.statement-pull{font-size:21px}}
 
 .pain-sec{background:var(--sand);position:relative;overflow:hidden}
 .pain-sec::after{content:none}
@@ -302,7 +308,7 @@ h2{font-size:48px;font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-
 .close-sec .cta-main{position:relative;z-index:1;font-size:16px;padding:15px 40px}
 
 .faq-sec{background:#fff}
-.faq-list{max-width:980px;margin:0 auto}
+.faq-list{max-width:1120px;margin:0 auto}
 .faq-item{border-top:1px solid rgba(0,0,0,.08);padding:28px 0}
 .faq-item:last-child{border-bottom:1px solid rgba(0,0,0,.08)}
 .faq-item h3{font-size:19px;font-weight:700;color:var(--ink);margin-bottom:10px;line-height:1.3}
@@ -489,13 +495,16 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
 <section class="sec statement-sec">
   <div class="inner">
-    <span class="eyebrow-pink reveal">Un choix solide</span>
-    <h2 class="reveal reveal-d1">La décision qu'on ne vous reprochera pas.</h2>
-    <div class="statement-body">
-      <p class="reveal reveal-d2">Le marketing ici a été construit dans des entreprises comme Criteo, AWS et Brevo, puis prouvé à nouveau chez Aprovall&nbsp;: une marque invisible depuis 16 ans devenue un moteur de demande en 15 mois. Les noms sur les logos sont les mêmes que ceux qui travaillent sur vos sujets.</p>
-      <p class="reveal reveal-d2">Le fractional, c'est la version la moins risquée d'un recrutement senior, pas le compromis low-cost. Pas de recherche de six mois, pas d'equity, pas d'erreur de casting à réparer. Vous commencez par un audit de deux semaines et vous décidez ensuite.</p>
-      <p class="reveal reveal-d3">Personne ne se fait reprocher d'avoir fait venir la personne qui l'a déjà fait.</p>
-    </div>
+    <div class="statement-grid">
+      <div>
+        <span class="eyebrow-pink reveal">Un choix solide</span>
+        <h2 class="reveal reveal-d1">La décision qu'on ne vous reprochera pas.</h2>
+        <div class="statement-body">
+          <p class="reveal reveal-d2">Construit chez Criteo, AWS et Brevo, puis prouvé à nouveau chez Aprovall&nbsp;: une marque invisible depuis 16 ans devenue un moteur de demande en 15 mois.</p>
+          <p class="reveal reveal-d3">Personne ne se fait reprocher d'avoir fait venir la personne qui l'a déjà fait.</p>
+        </div>
+      </div>
+      <img class="statement-illo reveal reveal-d2" src="/images/illustration-safe-bet.png" alt="Un choix solide : une expertise marketing éprouvée, gardée en sécurité" loading="lazy">
   </div>
 </section>
 
@@ -558,13 +567,16 @@ footer{background:#0F1219;padding:64px 60px 32px}
 
 <section class="sec statement-sec on-sand">
   <div class="inner">
-    <span class="eyebrow-pink reveal">Pour commencer</span>
-    <h2 class="reveal reveal-d1">Commencer, c'est la partie facile.</h2>
-    <div class="statement-body">
-      <p class="reveal reveal-d2">Pas de présentation, pas de pitch, pas de parcours achats interminable. On démarre par un appel de 30 minutes, pour voir si c'est une situation sur laquelle je peux vraiment agir.</p>
-      <p class="reveal reveal-d2">Si oui, la première étape, c'est un audit, pas un contrat dont vous ne pouvez plus sortir. Deux semaines, une lecture claire de l'état de votre marketing, qui vous reste quoi que vous décidiez ensuite.</p>
-      <p class="reveal reveal-d3">Je construis aux côtés de votre équipe, pas à distance. Vous ne passerez pas le premier mois à expliquer votre activité à un consultant. Vous le passerez à voir les choses se construire.</p>
-    </div>
+    <div class="statement-grid">
+      <div>
+        <span class="eyebrow-pink reveal">Pour commencer</span>
+        <h2 class="reveal reveal-d1">Commencer, c'est la partie facile.</h2>
+        <div class="statement-body">
+          <p class="reveal reveal-d2">Pas de présentation, pas de pitch, pas de parcours achats interminable. On démarre par un appel de 30 minutes, pour voir si c'est une situation sur laquelle je peux vraiment agir.</p>
+          <p class="reveal reveal-d2">Si oui, la première étape, c'est un audit, pas un contrat dont vous ne pouvez plus sortir. Deux semaines, une lecture claire de l'état de votre marketing, qui vous reste quoi que vous décidiez ensuite.</p>
+        </div>
+      </div>
+      <blockquote class="statement-pull reveal reveal-d3">Je construis aux côtés de votre équipe, pas à distance. Vous ne passerez pas le premier mois à expliquer votre activité à un consultant. Vous le passerez à voir les choses se construire.</blockquote>
   </div>
 </section>
 
