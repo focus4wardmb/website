@@ -4,9 +4,44 @@
 // backend. Replaces the old (non-delivering) daily Gmail-watcher path.
 //
 // Setup: in Netlify → Site configuration → Environment variables, add
-//   SLACK_WEBHOOK_URL = <an incoming webhook URL for the target channel>
-// (Slack → create an Incoming Webhook app pointed at #incoming-web.)
-// Until that var is set, this no-ops gracefully (submissions still saved).
+//   SLACK_WEBHOOK_URL = <an incoming webhook URL for #incoming-web>
+// Mark it as a secret (it's a credential). Until it's set, this no-ops
+// gracefully (submissions are still saved by Netlify).
+//
+// Uses the Node https module (not global fetch) so it works on any Netlify
+// Node runtime, and logs the Slack response so the Functions log is diagnostic.
+const https = require('https');
+
+function postToSlack(webhookUrl, text) {
+  return new Promise((resolve) => {
+    try {
+      const u = new URL(webhookUrl);
+      const body = JSON.stringify({ text });
+      const req = https.request(
+        {
+          hostname: u.hostname,
+          path: u.pathname + u.search,
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Content-Length': Buffer.byteLength(body),
+          },
+        },
+        (res) => {
+          let data = '';
+          res.on('data', (c) => (data += c));
+          res.on('end', () => resolve({ status: res.statusCode, data }));
+        }
+      );
+      req.on('error', (e) => resolve({ status: 0, data: String(e) }));
+      req.write(body);
+      req.end();
+    } catch (e) {
+      resolve({ status: 0, data: String(e) });
+    }
+  });
+}
+
 exports.handler = async (event) => {
   try {
     const { payload } = JSON.parse(event.body || '{}');
@@ -25,15 +60,9 @@ exports.handler = async (event) => {
       payload && payload.created_at ? `_submitted ${payload.created_at}_` : '',
     ].filter(Boolean);
 
-    const resp = await fetch(webhook, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text: lines.join('\n') }),
-    });
-    if (!resp.ok) {
-      console.error('Slack webhook failed:', resp.status, await resp.text());
-    }
-    return { statusCode: 200, body: 'ok' };
+    const r = await postToSlack(webhook, lines.join('\n'));
+    console.log('Slack post status:', r.status, '| body:', r.data);
+    return { statusCode: 200, body: 'slack status ' + r.status };
   } catch (e) {
     console.error('submission-created error:', e);
     return { statusCode: 200, body: 'error: ' + e.message }; // never block the submission
