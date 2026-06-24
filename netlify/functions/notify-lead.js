@@ -1,15 +1,12 @@
-// Netlify event function — fires automatically on every VERIFIED form
-// submission (after Netlify's spam filtering). Posts a real-time alert to
-// Slack so a website lead pings immediately instead of sitting in the Netlify
-// backend. Replaces the old (non-delivering) daily Gmail-watcher path.
+// HTTP function called directly by the contact form on successful submit.
+// Posts the lead to Slack in real time via SLACK_WEBHOOK_URL (Netlify env var).
 //
-// Setup: in Netlify → Site configuration → Environment variables, add
-//   SLACK_WEBHOOK_URL = <an incoming webhook URL for #incoming-web>
-// Mark it as a secret (it's a credential). Until it's set, this no-ops
-// gracefully (submissions are still saved by Netlify).
+// This replaces the `submission-created` event function, which Netlify does not
+// reliably trigger for AJAX/JavaScript form submissions. Firing from the form's
+// own success handler removes that dependency entirely.
 //
-// Uses the Node https module (not global fetch) so it works on any Netlify
-// Node runtime, and logs the Slack response so the Functions log is diagnostic.
+// Lightly gated: only accepts requests whose Referer/Origin is focus4ward.co,
+// so the public endpoint can't be casually spammed into the Slack channel.
 const https = require('https');
 
 function postToSlack(webhookUrl, text) {
@@ -22,10 +19,7 @@ function postToSlack(webhookUrl, text) {
           hostname: u.hostname,
           path: u.pathname + u.search,
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'Content-Length': Buffer.byteLength(body),
-          },
+          headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) },
         },
         (res) => {
           let data = '';
@@ -44,11 +38,16 @@ function postToSlack(webhookUrl, text) {
 
 exports.handler = async (event) => {
   try {
-    const { payload } = JSON.parse(event.body || '{}');
-    const d = (payload && payload.data) || {};
+    const h = event.headers || {};
+    const ref = h.referer || h.origin || h.Referer || h.Origin || '';
+    if (!/focus4ward\.co/.test(ref)) {
+      return { statusCode: 200, body: 'ignored (origin)' };
+    }
+    const body = JSON.parse(event.body || '{}');
+    const d = body.data || (body.payload && body.payload.data) || {};
     const webhook = process.env.SLACK_WEBHOOK_URL;
     if (!webhook) {
-      console.log('SLACK_WEBHOOK_URL not set — submission saved, Slack skipped');
+      console.log('SLACK_WEBHOOK_URL not set');
       return { statusCode: 200, body: 'no webhook configured' };
     }
     const lines = [
@@ -57,14 +56,12 @@ exports.handler = async (event) => {
       `*Email:* ${d.email || '—'}   *Phone:* ${d.phone || '—'}`,
       `*Who:* ${d.role || '—'}   *Source:* ${d.source || '—'}`,
       `*Message:* ${d.message || '—'}`,
-      payload && payload.created_at ? `_submitted ${payload.created_at}_` : '',
-    ].filter(Boolean);
-
+    ];
     const r = await postToSlack(webhook, lines.join('\n'));
     console.log('Slack post status:', r.status, '| body:', r.data);
     return { statusCode: 200, body: 'slack status ' + r.status };
   } catch (e) {
-    console.error('submission-created error:', e);
-    return { statusCode: 200, body: 'error: ' + e.message }; // never block the submission
+    console.error('notify-lead error:', e);
+    return { statusCode: 200, body: 'error: ' + e.message };
   }
 };
