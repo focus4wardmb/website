@@ -13,6 +13,7 @@
   gtag('js', new Date());
   gtag('config', 'G-S5RY1PVPTE');
 </script>
+<script defer src="/js/track.js"></script>
 <title>Book a call — Focus4ward | Miri Blum, Fractional CMO</title>
 <meta name="description" content="Book a call with Miri Blum, Fractional CMO and AI Marketing Systems Builder. For founders who need a CMO. For CMOs who need AI. Based in Paris, works globally.">
 <meta name="author" content="Miri Blum">
@@ -316,7 +317,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
 </footer>
 
 <script>
-document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const form=this;fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()}).then(()=>{form.style.display='none';document.getElementById('success-msg').style.display='block';}).catch(()=>{form.submit()});});
+document.getElementById('contact-form').addEventListener('submit',function(e){e.preventDefault();const form=this;fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()}).then(()=>{if(typeof gtag==='function'){gtag('event','generate_lead',{form_name:'contact',lead_role:(form.querySelector('[name=role]')||{}).value||'',lead_source:(form.querySelector('[name=source]')||{}).value||''});}form.style.display='none';document.getElementById('success-msg').style.display='block';}).catch(()=>{form.submit()});});
 document.getElementById('navToggle').addEventListener('click',function(){const open=document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',open)});
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));
 (function(){const bar=document.getElementById('scroll-prog');if(!bar)return;function upd(){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;bar.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';}window.addEventListener('scroll',upd,{passive:true});upd();})();
