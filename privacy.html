@@ -11,6 +11,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('consent', 'default', { 'ad_storage':'denied', 'ad_user_data':'denied', 'ad_personalization':'denied', 'analytics_storage':'denied' });
+  gtag('set', 'ads_data_redaction', true);
+  gtag('set', 'url_passthrough', true);
   gtag('config', 'G-S5RY1PVPTE');
 </script>
 <script defer src="/js/track.js"></script>
@@ -157,7 +160,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       <p>I only collect what I need to talk with you and to keep the site working.</p>
       <ul>
         <li><strong>Contact form.</strong> When you use the form on the contact page, I collect your name, company, email, phone number (optional), your role, your message, and how you heard about me. Submissions are processed and stored through Netlify Forms.</li>
-        <li><strong>Analytics.</strong> This site uses Google Analytics to understand how visitors use it. It sets cookies and collects anonymised usage data such as pages viewed, approximate location, and device type.</li>
+        <li><strong>Analytics.</strong> This site uses Google Analytics 4 to understand how visitors use it: pages viewed, approximate location, and device type. It runs in consent mode, meaning analytics storage is denied by default, so no tracking or advertising cookies are set without consent. The data it collects is aggregated and not used to identify you.</li>
       </ul>
 
       <h2>Why I collect it</h2>
@@ -173,7 +176,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
       <p>Under the GDPR you can ask to access, correct, delete, or restrict your data, or object to how it is processed. Email <a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a> and I will respond within one month. If you are in France, you can also lodge a complaint with the <a href="https://www.cnil.fr/" target="_blank" rel="noopener noreferrer">CNIL</a>.</p>
 
       <h2>Cookies</h2>
-      <p>This site uses analytics cookies only. You can block or delete cookies in your browser settings, and the site still works without them.</p>
+      <p>Google Analytics 4 runs here in consent mode with analytics storage denied by default, so it does not set tracking cookies without consent. You can still block or delete cookies in your browser settings, and the site works without them.</p>
 
       <h2>Changes to this policy</h2>
       <p>I may update this policy as the site evolves. The date at the top always shows the latest revision.</p>
