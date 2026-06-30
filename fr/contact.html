@@ -11,9 +11,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('consent', 'default', { 'ad_storage':'denied', 'ad_user_data':'denied', 'ad_personalization':'denied', 'analytics_storage':'denied' });
-  gtag('set', 'ads_data_redaction', true);
-  gtag('set', 'url_passthrough', true);
   gtag('config', 'G-S5RY1PVPTE');
 </script>
 <script defer src="/js/track.js"></script>
@@ -134,7 +131,8 @@ select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='ht
 .submit-btn:hover{opacity:.92;transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,49,110,.3)}
 .form-note{font-size:12px;color:rgba(74,69,64,.55);margin-top:12px;line-height:1.5}
 .consent-label{display:flex;gap:9px;align-items:flex-start;font-size:13px;font-weight:400;color:var(--body-sand);text-transform:none;letter-spacing:0;line-height:1.5;margin-bottom:0;cursor:pointer}
-.consent-label input[type=checkbox]{margin-top:3px;flex-shrink:0;accent-color:var(--pink)}
+.consent-label input[type=checkbox]{width:16px;height:16px;min-height:0;padding:0;border:0;flex:0 0 auto;margin:2px 0 0;accent-color:var(--pink)}
+.consent-label>span{flex:1 1 auto;min-width:0}
 .consent-label a{color:var(--pink);text-decoration:underline}
 
 .success-msg{display:none;background:#fff;border-radius:10px;padding:40px;text-align:center;border-top:3px solid var(--pink)}
@@ -294,7 +292,7 @@ footer{background:#0F1219;padding:64px 60px 32px}
           </select>
         </div>
         <div class="form-group form-consent">
-          <label class="consent-label"><input type="checkbox" name="consent" required> J'accepte que Focus4ward conserve les informations saisies ici afin de répondre à ma demande, comme décrit dans la <a href="/fr/confidentialite">politique de confidentialité</a>.</label>
+          <label class="consent-label"><input type="checkbox" name="consent" required><span>J'accepte que Focus4ward conserve les informations saisies ici afin de répondre à ma demande, comme décrit dans la <a href="/fr/confidentialite">politique de confidentialité</a>.</span></label>
         </div>
         <button type="submit" class="submit-btn">Envoyer le message</button>
         <p class="form-note">Vos informations servent uniquement à répondre à votre demande. Elles ne seront jamais partagées ni vendues.</p>
