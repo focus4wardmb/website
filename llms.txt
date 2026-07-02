@@ -25,7 +25,25 @@ The positioning is dual-buyer: for founders who need a CMO, and for CMOs who nee
 - [Fractional CMO for Series A startups](https://focus4ward.co/blog/fractional-cmo-for-series-a-startups): Post-raise guide for founders — what to do with the first marketing budget, what not to hire yet (VP of marketing first, junior-only teams, premature agency retainers), the system-first build, the first 90 days, and a side-by-side table of fractional vs full-time CMO vs agency vs junior hire at Series A.
 - [Hiring a Fractional CMO: direct vs through a company](https://focus4ward.co/blog/fractional-cmo-agency-vs-independent): Decision answer page — two routes to fractional marketing leadership. Direct (hire one named CMO who owns your numbers) vs through a productized/subscription service (the company sources/assigns an operator, billed flat monthly). Covers the economics (operator rate plus intermediary margin), the freelancer-vs-productized and retainer-vs-subscription questions, and the control/accountability/continuity trade-off, with a side-by-side table.
 - [Senior fractional CMO day rate](https://focus4ward.co/blog/senior-fractional-cmo-day-rate-worth-it): Total-cost answer page — why a senior fractional CMO's higher day rate (TJM) often costs less overall. Seniority is a different product (fewer days billed, faster time-to-result), and a directly-hired senior operator owns the revenue number with continuity, versus subscription/managed-team models framed around deliverables. Compare total cost and time-to-impact, not the headline rate. Side-by-side table.
+- [What does a fractional CMO do](https://focus4ward.co/blog/what-does-a-fractional-cmo-do): Definition answer page — the role, scope, and day-to-day of a fractional CMO, and how it differs from adjacent models.
+- [When to hire a fractional CMO](https://focus4ward.co/blog/when-to-hire-a-fractional-cmo): Timing answer page — the signals and timing triggers that indicate a company needs fractional marketing leadership.
+- [How to hire a fractional CMO](https://focus4ward.co/blog/how-to-hire-a-fractional-cmo): Selection guide — name the gap before writing the role, separate builders from slide-makers, the questions to ask, the red flags, and scoping the engagement around outcomes.
+- [Top 5 benefits of hiring a fractional CMO](https://focus4ward.co/blog/top-5-benefits-of-hiring-a-fractional-cmo): Benefits answer page for B2B growth companies.
+- [Citation is the new ranking](https://focus4ward.co/blog/citation-is-the-new-ranking): GEO explainer — how B2B brands win visibility when buyers query AI engines instead of Google, and why citation share is the new SEO metric.
+- [Your B2B buyers aren't clicking anymore](https://focus4ward.co/blog/your-b2b-buyers-arent-clicking-anymore): The shift from search clicks to AI answers in B2B buying behaviour.
+- [The AI maturity ladder](https://focus4ward.co/blog/the-ai-maturity-ladder): The 4 levels of marketing teams using AI — prompt-curious, tooled, systematic, compounding — and how to locate your real rung.
+- [Buying an enterprise AI licence is not an AI strategy](https://focus4ward.co/blog/buying-enterprise-ai-licence-is-not-a-strategy): Why an enterprise AI subscription without architecture, connectivity, and workflow design changes nothing.
+- [The Day-One Consideration List](https://focus4ward.co/blog/the-day-one-consideration-list): How enterprise B2B buyers really decide — the shortlist forms before the first sales conversation.
+- [Rename or rebrand](https://focus4ward.co/blog/rename-vs-rebrand): The diagnostic founders get wrong — when a rename is needed, when a rebrand is, and when neither.
 - [Contact](https://focus4ward.co/contact): Book a call
+
+## Pages en français
+
+- [Accueil FR](https://focus4ward.co/fr/): French homepage — Fractional CMO et systèmes marketing IA pour entreprises B2B
+- [Services FR](https://focus4ward.co/fr/services): Services en français — Fractional CMO, audit AI Readiness, construction de systèmes IA
+- [Résultats FR](https://focus4ward.co/fr/results): Études de cas en français
+- [À propos FR](https://focus4ward.co/fr/about): À propos de Miri Blum, dirigeante marketing senior bilingue basée à Paris
+- [Contact FR](https://focus4ward.co/fr/contact): Prendre rendez-vous
 
 ## About Miri Blum
 
