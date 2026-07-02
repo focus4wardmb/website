@@ -65,6 +65,16 @@
   to = "/fr/confidentialite.html"
   status = 200
 
+[[redirects]]
+  from = "/fr/fractional-cmo-paris"
+  to = "/fr/fractional-cmo-paris.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/fractional-cmo"
+  to = "/fr/fractional-cmo.html"
+  status = 200
+
 # Security headers
 [[headers]]
   for = "/*"
