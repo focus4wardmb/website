@@ -185,6 +185,9 @@ body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-4
 .content-inner ul{margin:0 0 16px 0;padding-left:0;list-style:none}
 .content-inner ul li{position:relative;padding-left:24px;font-size:16px;color:var(--body-sand);line-height:1.7;margin-bottom:10px}
 .content-inner ul li::before{content:'';position:absolute;left:0;top:14px;width:8px;height:2px;background:var(--pink)}
+.content-inner ol.phase-list{counter-reset:phase;list-style:none;margin:0 0 16px 0;padding-left:0}
+.content-inner ol.phase-list li{counter-increment:phase;position:relative;padding-left:44px;font-size:16px;color:var(--body-sand);line-height:1.7;margin-bottom:14px}
+.content-inner ol.phase-list li::before{content:counter(phase);position:absolute;left:0;top:0;width:28px;height:28px;border-radius:50%;background:var(--pink);color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .table-wrap{overflow-x:auto;margin:20px 0 8px}
 .compare-table{width:100%;border-collapse:collapse;font-size:15px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;overflow:hidden;min-width:640px}
 .compare-table th,.compare-table td{padding:14px 18px;text-align:left;border-bottom:1px solid rgba(0,0,0,.06);vertical-align:top}
@@ -310,6 +313,12 @@ footer{background:#0F1219;padding:64px 60px 32px}
   </div>
 </section>
 
+<section class="audit-visual">
+  <div class="audit-visual-inner">
+    <img src="/images/marketing-audit.jpg" alt="A marketing leader examining a layered marketing funnel with a magnifying glass, each layer tagged, illustrating a structured marketing audit" loading="lazy" width="820" height="547">
+  </div>
+</section>
+
 <section class="content-sec">
   <div class="content-inner">
 
@@ -318,7 +327,15 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <p>The distinction that matters: a weak audit describes the current state and stops. A strong audit takes a position. It names the headline finding in one sentence, ranks what to fix first by impact and time-to-result, and hands the buyer something they can act on Monday. Most companies do not have a marketing problem. They have a clarity problem, and the audit is what resolves it.</p>
 
     <h2>Should you run a marketing audit?</h2>
-    <p>Run one when the symptoms are loud but the cause is not. The signals: spend is going up and pipeline is not, nobody can say which channels are working, the team is busy but the numbers are flat, a new leader inherited a function they did not build, a board or PE sponsor wants a marketing plan they can trust, or an AI initiative has stalled at "we bought some tools." If two or more of those are true, the diagnosis is worth more than another quarter of guessing.</p>
+    <p>Run one when the symptoms are loud but the cause is not. Any two of these together, and the diagnosis is worth more than another quarter of guessing:</p>
+    <ul>
+      <li>Spend is going up and pipeline is not.</li>
+      <li>Nobody can say which channels are actually working.</li>
+      <li>The team is busy but the numbers are flat.</li>
+      <li>A new leader inherited a function they did not build.</li>
+      <li>A board or PE sponsor wants a marketing plan they can trust.</li>
+      <li>An AI initiative has stalled at "we bought some tools."</li>
+    </ul>
     <p>Skip it if you already know exactly what is broken and simply need hands to fix it. An audit earns its fee when the problem is misdiagnosed or unnamed, not when the work is clear and the only gap is capacity.</p>
 
     <h2>What a marketing audit covers</h2>
@@ -336,12 +353,6 @@ footer{background:#0F1219;padding:64px 60px 32px}
   </div>
 </section>
 
-<section class="audit-visual">
-  <div class="audit-visual-inner">
-    <img src="/images/marketing-audit.jpg" alt="A marketing leader examining a layered marketing funnel with a magnifying glass, each layer tagged, illustrating a structured marketing audit" loading="lazy" width="820" height="547">
-  </div>
-</section>
-
 <section class="inline-cta-band">
   <h2 class="cta-band-line">Not sure where your marketing is actually leaking? That is what the audit is for.</h2>
   <a href="/contact">Book a call</a>
@@ -355,7 +366,15 @@ footer{background:#0F1219;padding:64px 60px 32px}
     <p>Buying an enterprise AI licence is not an AI strategy. The audit separates the workflows where AI compounds from the ones where it just adds a subscription line, and it produces a 90-day build plan rather than a tool list.</p>
 
     <h2>How the marketing audit runs</h2>
-    <p>The engagement moves through six phases over roughly two to three weeks. It starts with a setup phase that locks scope and access, then a collection phase that pulls the data (analytics, search console, CRM, ad accounts, existing reporting). Interviews come next: the CEO or founder, each marketing report, two or three salespeople, and where access allows, two or three customers. The voice of the customer is not optional. Then the analysis phase works through competitors, market, website and SEO, paid channels, materials, tech stack, and the pipeline data. Synthesis turns all of it into findings, priorities, and the dated plan. The last phase delivers and presents it live.</p>
+    <p>The engagement moves through six phases over roughly two to three weeks:</p>
+    <ol class="phase-list">
+      <li><strong>Setup.</strong> Lock the scope and the access before anything else.</li>
+      <li><strong>Collect.</strong> Pull the data: analytics, search console, CRM, ad accounts, existing reporting.</li>
+      <li><strong>Interview.</strong> The CEO or founder, each marketing report, two or three salespeople, and where access allows, two or three customers. The voice of the customer is not optional.</li>
+      <li><strong>Analyse.</strong> Competitors, market, website and SEO, paid channels, materials, tech stack, and the pipeline data.</li>
+      <li><strong>Synthesise.</strong> Turn all of it into findings, priorities, and the dated plan.</li>
+      <li><strong>Deliver.</strong> Present it live, and hand over the deck plus the companion document.</li>
+    </ol>
     <p>The one variable that moves the timeline is access. The faster the company returns data and grants tool access, the faster the audit ships. Part of the audit's value is naming what the company is not tracking at all, which surfaces the moment collection starts.</p>
 
     <h2>Marketing audit vs marketing consulting vs a fractional CMO</h2>
