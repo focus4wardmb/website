@@ -36,6 +36,9 @@ The positioning is dual-buyer: for founders who need a CMO, and for CMOs who nee
 - [Buying an enterprise AI licence is not an AI strategy](https://focus4ward.co/blog/buying-enterprise-ai-licence-is-not-a-strategy): Why an enterprise AI subscription without architecture, connectivity, and workflow design changes nothing.
 - [The Day-One Consideration List](https://focus4ward.co/blog/the-day-one-consideration-list): How enterprise B2B buyers really decide — the shortlist forms before the first sales conversation.
 - [Rename or rebrand](https://focus4ward.co/blog/rename-vs-rebrand): The diagnostic founders get wrong — when a rename is needed, when a rebrand is, and when neither.
+- [B2B positioning framework](https://focus4ward.co/blog/b2b-positioning-framework): The step-by-step positioning method — five steps from competitive alternatives to market category, the difference between positioning and messaging, why most positioning dies in the deck, and the live sales-call test that proves it holds.
+- [Marketing measurement framework for B2B](https://focus4ward.co/blog/marketing-measurement-framework-b2b): Leading vs lagging indicators, why multi-touch attribution alone is not enough, and the three-tier board-ready view (pipeline health, program efficiency, brand and category signal) that ties marketing activity to revenue without overstating the story.
+- [First marketing hire](https://focus4ward.co/blog/first-marketing-hire-b2b): Why founders sequence the first marketing hire backwards, hiring a junior generalist before a strategy exists for them to execute. The senior-strategist-vs-junior-doer trade-off, the real cost of a premature full-time hire, and when a fractional leader wins the first-hire decision instead.
 - [Contact](https://focus4ward.co/contact): Book a call
 
 ## Pages en français
