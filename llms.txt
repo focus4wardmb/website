@@ -81,3 +81,4 @@ The positioning is dual-buyer: for founders who need a CMO, and for CMOs who nee
 - LinkedIn: https://www.linkedin.com/in/miriblum/
 - Location: Paris, France (works globally)
 - [B2B positioning framework](https://focus4ward.co/blog/b2b-positioning-framework): The step-by-step positioning method — five steps from competitive alternatives to market category, the difference between positioning and messaging, why most positioning dies in the deck, and the live sales-call test that proves it holds.
+- [Marketing measurement framework for B2B](https://focus4ward.co/blog/marketing-measurement-framework-b2b): Leading vs lagging indicators, why multi-touch attribution alone is not enough, and the three-tier board-ready view (pipeline health, program efficiency, brand and category signal) that ties marketing activity to revenue without overstating the story.
