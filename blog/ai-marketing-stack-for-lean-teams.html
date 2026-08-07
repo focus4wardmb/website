@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="/images/icon.png">
+<link rel="apple-touch-icon" href="/images/icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5RY1PVPTE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S5RY1PVPTE');
+</script>
+<script defer src="/js/track.js"></script>
+<title>AI marketing stack for lean B2B teams — Focus4ward</title>
+<meta name="description" content="AI marketing stack for lean B2B teams: five layers, not fifteen tools. What to wire up, where AI removes the grunt work, and where it can't. By Miri Blum.">
+<meta name="author" content="Miri Blum">
+<link rel="canonical" href="https://focus4ward.co/blog/ai-marketing-stack-for-lean-teams">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://focus4ward.co/blog/ai-marketing-stack-for-lean-teams">
+<meta property="og:title" content="AI marketing stack for lean B2B teams">
+<meta property="og:description" content="A one to three person B2B marketing team does not need fifteen tools. It needs five layers: source of truth, content engine, distribution, signal, and a review gate. What to wire up, and in what order.">
+<meta property="og:image" content="https://focus4ward.co/images/blog/ai-marketing-stack-for-lean-teams.png">
+<meta property="og:locale" content="en_GB">
+<meta property="og:site_name" content="Focus4ward">
+<meta property="article:author" content="Miri Blum">
+<meta property="article:published_time" content="2026-08-07">
+<meta property="article:section" content="AI and Systems">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI marketing stack for lean B2B teams">
+<meta name="twitter:description" content="Five layers, not fifteen logos. What a one to three person B2B marketing team should actually wire up, and what AI still can't do for it.">
+<meta name="twitter:image" content="https://focus4ward.co/images/blog/ai-marketing-stack-for-lean-teams.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AI marketing stack for lean B2B teams",
+  "description": "A one to three person B2B marketing team does not need fifteen tools. It needs five layers: source of truth, content engine, distribution, signal, and a review gate. What to wire up, and in what order.",
+  "author": {"@type": "Person", "name": "Miri Blum", "jobTitle": "Fractional CMO and AI Marketing Systems Builder", "url": "https://focus4ward.co/about", "sameAs": ["https://www.linkedin.com/in/miriblum/"], "description": "Fractional CMO and AI Marketing Systems Builder with 18 years in B2B marketing. Ex-VP Global Marketing at Brevo, Senior Partner Marketing Manager at AWS, Head of Brand and Creative at Criteo."},
+  "publisher": {"@type": "Organization", "name": "Focus4ward", "url": "https://focus4ward.co/", "logo": {"@type": "ImageObject", "url": "https://focus4ward.co/images/logo.png"}},
+  "datePublished": "2026-08-07",
+  "dateModified": "2026-08-07",
+  "mainEntityOfPage": {"@type": "WebPage", "@id": "https://focus4ward.co/blog/ai-marketing-stack-for-lean-teams"},
+  "image": "https://focus4ward.co/images/blog/ai-marketing-stack-for-lean-teams.png",
+  "keywords": "AI marketing stack, AI marketing stack for lean teams, marketing stack for small B2B teams, AI marketing tools, marketing tech stack B2B, AI marketing systems, lean marketing team, fractional CMO"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an AI marketing stack?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI marketing stack is the set of layers a marketing team runs on, with AI embedded inside each layer rather than sitting beside it. For a lean B2B team there are five: a source of truth holding positioning, ICP, brand rules and proof; a content engine that turns one point of view into many assets; a distribution layer that puts the work in front of buyers on schedule; a signal layer that reports what buyers, competitors and AI answer engines are saying; and a review gate where a human decides what ships. The layers are the stack. The tools are interchangeable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools does a small B2B marketing team actually need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "One per layer, and no more. A readable source of truth (Notion, or plain markdown files in a repo), a frontier model wired to read that source of truth rather than being pasted context each time, whatever CRM and scheduler the company already pays for, one search and AI-visibility tool such as Ahrefs or Semrush plus a monthly prompt run across ChatGPT and Perplexity, and a review checklist with a named human attached. If two tools claim the same layer, one of them goes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can AI replace a marketing hire on a lean team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It replaces volume work, not judgment. AI absorbs drafting, variant generation, metadata maintenance, keyword clustering, call-note structuring and competitor monitoring, which is most of what a junior generalist spends the week on. It does not decide positioning, own the pipeline number, read a room, or tell you which of a hundred generated value propositions a buyer will repeat back on a call. A lean team with a good stack usually needs fewer people and more senior ones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a lean B2B team build first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The source of truth, then the review gate, then the content engine, then distribution, then signal. Most teams start with the content engine because it is the visible one, and end up generating volume against positioning nobody wrote down. Building the gate before the volume means the first weak draft gets caught by a checklist rather than by a customer. Signal comes last, because monitoring you have no capacity to act on is just a better-informed backlog."
+      }
+    }
+  ]
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1E2530;--pink:#C9316E;--sand:#F5F0EB;--yellow:#F0C040;--card-dark:#2A3142;--body-dark:rgba(255,255,255,0.88);--body-sand:#4A4540;--border-dark:rgba(255,255,255,0.08)}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:#fff;color:var(--ink);-webkit-font-smoothing:antialiased}
+.pk{color:var(--pink)}.yw{color:var(--yellow)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--pink);color:#fff;padding:10px 16px;border-radius:0 0 6px 0;font-size:13px;font-weight:600;z-index:300;text-decoration:none}
+.skip-link:focus{left:0}
+.scroll-prog{position:fixed;top:0;left:0;height:2px;background:var(--pink);width:0;z-index:200;transition:width .1s linear}
+nav{position:sticky;top:0;z-index:100;background:var(--ink);height:64px;border-bottom:1px solid var(--border-dark);padding:0 60px}
+.nav-inner{max-width:1120px;margin:0 auto;height:100%;display:flex;align-items:center;gap:24px}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0;height:32px}
+.nav-logo img{height:100%;width:auto;display:block}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none;margin-left:auto}
+.nav-links a{font-size:13px;font-weight:500;color:rgba(255,255,255,0.7);text-decoration:none;transition:color .2s}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.nav-cta{background:var(--pink);color:#fff;padding:9px 20px;border-radius:6px;font-weight:600;font-size:13px;text-decoration:none;transition:opacity .2s,transform .2s,box-shadow .2s;flex-shrink:0}
+.nav-cta:hover{opacity:.92;transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,49,110,.25)}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;width:36px;height:36px;flex-direction:column;justify-content:center;align-items:center;gap:5px;padding:0;flex-shrink:0}
+.nav-toggle span{display:block;width:20px;height:2px;background:#fff;transition:transform .25s,opacity .25s}
+body.nav-open .nav-toggle span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.nav-open .nav-toggle span:nth-child(2){opacity:0}
+body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.article-header{background:var(--ink);padding:80px 60px 56px;position:relative;overflow:hidden}
+.article-header::before{content:'';position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:400px;height:400px;border-radius:50%;border:1px solid rgba(201,49,110,.12);box-shadow:0 0 0 60px rgba(201,49,110,.05),0 0 0 120px rgba(201,49,110,.03);pointer-events:none}
+.article-header-inner{max-width:980px;margin:0 auto;position:relative;z-index:1}
+.article-meta{display:flex;align-items:center;gap:14px;margin-bottom:24px;font-size:11px;font-weight:700;color:var(--pink);letter-spacing:2px;text-transform:uppercase}
+.article-meta time{color:rgba(255,255,255,.55);font-weight:600;letter-spacing:1.5px}
+.article-meta a{color:var(--pink);text-decoration:none}
+.article-header h1{font-size:46px;font-weight:700;line-height:1.1;letter-spacing:-1.2px;color:#fff;margin-bottom:18px}
+.article-header .lede{font-size:18px;color:var(--body-dark);line-height:1.65}
+.article-body{background:#fff;padding:72px 60px}
+.article-content{max-width:980px;margin:0 auto}
+.article-content h2{font-size:30px;font-weight:700;color:var(--ink);line-height:1.2;margin:48px 0 16px;letter-spacing:-.5px}
+.article-content h3{font-size:21px;font-weight:700;color:var(--ink);line-height:1.3;margin:36px 0 12px}
+.article-content p{font-size:17px;line-height:1.72;color:var(--body-sand);margin-bottom:22px}
+.article-content strong{color:var(--ink);font-weight:700}
+.article-content a{color:var(--pink);text-decoration:none;border-bottom:1px solid rgba(201,49,110,.3);transition:border-color .2s}
+.article-content a:hover{border-color:var(--pink)}
+.article-content ul,.article-content ol{margin:0 0 22px 24px}
+.article-content li{font-size:17px;line-height:1.72;color:var(--body-sand);margin-bottom:8px}
+.article-content blockquote{border-left:3px solid var(--pink);padding:16px 24px;margin:32px 0;font-style:italic;color:var(--body-sand);background:rgba(201,49,110,.04);border-radius:0 6px 6px 0}
+.article-content table{width:100%;border-collapse:collapse;margin:28px 0;font-size:15px}
+.article-content th,.article-content td{text-align:left;padding:13px 16px;border:1px solid rgba(0,0,0,.1);vertical-align:top;line-height:1.55}
+.article-content th{background:var(--ink);color:#fff;font-weight:700;font-size:13px;letter-spacing:.3px}
+.article-content tbody tr:nth-child(even){background:rgba(245,240,235,.5)}
+.article-content td:first-child{font-weight:600;color:var(--ink)}
+.cta-block{background:var(--ink);padding:56px;border-radius:12px;margin:56px 0;text-align:center;position:relative;overflow:hidden}
+.cta-block::after{content:'';position:absolute;right:-60px;top:50%;transform:translateY(-50%);width:300px;height:300px;border-radius:50%;border:1px solid rgba(201,49,110,.1);box-shadow:0 0 0 50px rgba(201,49,110,.04);pointer-events:none}
+.cta-block h3{color:#fff;font-size:24px;font-weight:700;line-height:1.3;margin-bottom:14px;position:relative;z-index:1}
+.cta-block p{color:var(--body-dark);font-size:15px;line-height:1.6;margin-bottom:24px;position:relative;z-index:1}
+.cta-block a{display:inline-block;background:var(--pink);color:#fff;padding:13px 30px;border-radius:7px;font-weight:600;font-size:15px;text-decoration:none;border:none;position:relative;z-index:1;transition:opacity .2s,transform .2s,box-shadow .2s}
+.cta-block a:hover{opacity:.92;transform:translateY(-1px);box-shadow:0 8px 24px rgba(201,49,110,.3)}
+.author-card{display:flex;align-items:center;gap:16px;padding:28px;border-top:1px solid rgba(0,0,0,.06);margin-top:56px}
+.author-card img{width:56px;height:56px;border-radius:50%;object-fit:cover;background:var(--sand)}
+.author-card-info h4{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:2px}
+.author-card-info p{font-size:13px;color:rgba(61,55,48,.65);margin:0;line-height:1.4}
+.back-to-blog{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--pink);text-decoration:none;margin-bottom:32px;letter-spacing:.5px}
+.back-to-blog:hover{transform:translateX(-2px);transition:transform .2s}
+footer{background:#0F1219;padding:64px 60px 32px}
+.foot-inner{max-width:1120px;margin:0 auto}
+.foot-top{display:grid;grid-template-columns:1.4fr 2fr;gap:60px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.06)}
+.foot-brand{display:flex;flex-direction:column;gap:16px}
+.foot-logo{text-decoration:none;align-self:flex-start;display:inline-block}
+.foot-logo img{height:40px;width:auto;display:block}
+.foot-tagline{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;max-width:300px}
+.foot-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.foot-col h5{font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:14px}
+.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.foot-col li,.foot-col a{font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;line-height:1.5;transition:color .2s}
+.foot-col a:hover{color:#fff}
+.foot-social{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.65);text-decoration:none;font-size:13px;line-height:1.5;transition:color .2s}
+.foot-social svg{width:18px;height:18px;fill:currentColor;flex-shrink:0}
+.foot-social:hover{color:#fff}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.foot-copy{font-size:11px;color:rgba(255,255,255,.4)}
+@media (max-width:768px){
+  nav{padding:0 16px;height:56px}
+  .nav-inner{gap:10px}
+  .nav-toggle{display:flex}
+  .nav-cta{margin-left:auto;font-size:12px;padding:7px 14px}
+  .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:var(--ink);flex-direction:column;align-items:stretch;gap:0;padding:8px 20px 16px;border-bottom:1px solid var(--border-dark);box-shadow:0 8px 24px rgba(0,0,0,.4);margin-left:0}
+  body.nav-open .nav-links{display:flex}
+  .nav-links li{width:100%}
+  .nav-links a{display:block;font-size:15px;padding:12px 0;color:rgba(255,255,255,.85)}
+  .nav-logo{height:24px}
+  .article-header{padding:48px 20px 36px}
+  .article-header h1{font-size:30px}
+  .article-header .lede{font-size:16px}
+  .article-body{padding:48px 20px}
+  .article-content h2{font-size:24px}
+  .article-content h3{font-size:19px}
+  .article-content p,.article-content li{font-size:16px}
+  .article-content table{font-size:13px}
+  .cta-block{padding:32px 24px}
+  .cta-block h3{font-size:20px}
+  .article-header::before,.cta-block::after{display:none}
+  footer{padding:40px 20px 24px}
+  .foot-top{display:flex;flex-direction:column;gap:28px;padding-bottom:24px}
+  .foot-cols{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .foot-bottom{flex-direction:column;gap:8px;align-items:flex-start;padding-top:16px}
+}
+.faq-block{margin:56px 0 0;border-top:1px solid rgba(0,0,0,.08);padding-top:8px}
+.faq-block > h2{font-size:26px;margin:24px 0 8px}
+.faq-item{padding:18px 0;border-bottom:1px solid rgba(0,0,0,.06)}
+.faq-item:last-child{border-bottom:none}
+.faq-item h3{font-size:18px;font-weight:700;color:var(--ink);line-height:1.35;margin:0 0 8px}
+.faq-item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;font-size:18px;font-weight:700;color:var(--ink);line-height:1.3}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--pink);font-size:24px;font-weight:400;line-height:1;flex-shrink:0}
+.faq-item[open] summary::after{content:"\2212"}
+.faq-item summary:hover{color:var(--pink)}
+.faq-item[open] summary{margin-bottom:10px}
+.faq-item p{font-size:16px;line-height:1.65;color:var(--body-sand);margin:0}
+.share-block{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;display:flex;flex-direction:column;align-items:center;gap:10px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:32px;padding:14px 9px;box-shadow:0 6px 24px rgba(30,37,48,.08);margin:0}
+.share-label{display:none}
+.share-buttons{display:flex;flex-direction:column;gap:8px;align-items:center}
+.share-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--sand);color:var(--ink);text-decoration:none;border:1px solid rgba(0,0,0,.06);transition:background .2s,color .2s,transform .2s;cursor:pointer;padding:0}
+.share-btn:hover,.share-btn:focus{background:var(--pink);color:#fff;transform:translateY(-1px);border-color:var(--pink);outline:none}
+.share-btn:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.share-btn svg{width:16px;height:16px;fill:currentColor}
+.share-fb{position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--ink);color:#fff;padding:6px 10px;border-radius:6px;font-size:11px;font-weight:600;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .25s}
+.share-fb.on{opacity:1}
+.share-fb::after{content:'';position:absolute;left:100%;top:50%;transform:translateY(-50%);border:5px solid transparent;border-left-color:var(--ink)}
+@media (max-width:768px){
+  .share-block{right:8px;padding:10px 6px;gap:6px;border-radius:24px}
+  .share-btn{width:32px;height:32px}
+  .share-btn svg{width:14px;height:14px}
+  .share-buttons{gap:6px}
+  .share-fb{font-size:10px;padding:5px 8px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://focus4ward.co/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://focus4ward.co/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "AI marketing stack for lean B2B teams",
+      "item": "https://focus4ward.co/blog/ai-marketing-stack-for-lean-teams"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="scroll-prog" id="scroll-prog"></div>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
+    <ul class="nav-links">
+      <li><a href="/services">Services</a></li>
+      <li><a href="/results">Results</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+      <li><a href="/fr/">FR</a></li>
+    </ul>
+    <a href="/contact" class="nav-cta">Book a call</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="article-header">
+  <div class="article-header-inner">
+    <div class="article-meta">
+      <a href="/blog">Blog</a> · <span>AI and Systems</span> · <time datetime="2026-08-07">7 August 2026</time>
+    </div>
+    <h1>AI marketing stack for lean B2B teams.</h1>
+    <p class="lede">Five layers, not fifteen logos. Most small B2B teams buy tools one pain at a time and end up with a stack nobody owns. Here's what a one to three person team should actually wire up, in what order, and the parts AI still can't take off your plate.</p>
+  </div>
+</header>
+
+<article class="article-body">
+  <div class="article-content">
+    <a href="/blog" class="back-to-blog">← Back to all articles</a>
+
+    <img src="/images/blog/ai-marketing-stack-for-lean-teams.png" alt="AI marketing stack for lean B2B teams shown as a layered tower of labelled blocks with two people building it" style="width:100%;border-radius:10px;margin:4px 0 16px;display:block">
+
+    <p>An AI marketing stack for a lean B2B team is five layers, each with one job and ideally one tool: a <strong>source of truth</strong> that holds positioning, ICP, brand rules and proof; a <strong>content engine</strong> that turns one point of view into many assets; a <strong>distribution layer</strong> that puts the work in front of buyers on schedule; a <strong>signal layer</strong> that reports what buyers, competitors and AI answer engines are saying; and a <strong>review gate</strong> where a human decides what ships. Per Forrester's 2024 B2B Buyers' Journey research, 89% of B2B buyers now use generative AI somewhere in their purchase process, so the question for a marketing leader is no longer whether AI belongs in the stack. It's which layer it belongs in.</p>
+
+    <h2>AI marketing stack means layers, not logos</h2>
+    <p>Start from the job, not the vendor. A layer is a job that has to get done whether or not software exists to do it. Somebody has to know what the company stands for. Somebody has to turn that into content, publish it, watch what comes back, and decide what's good enough to carry the company's name. Those jobs existed in 2010 and they exist now. What changed is how much of each one a model can absorb, and the honest answer varies wildly by layer.</p>
+    <p>Tools get bought the other way round. A marketing director feels a pain, a vendor demos a fix, the line item lands. Eighteen months later the team pays for four products that overlap on two layers and cover none of the others. Nobody can say which tool owns which job, so every job quietly lands back on the same two people. That's a stack in name only. It's a subscription list.</p>
+    <p>The diagnostic is boring and it works. Point at each tool and name the layer it owns. Two tools claiming the same layer means one goes. A layer with no tool is the next purchase. A layer with no <em>human owner</em> is the actual problem, and no purchase fixes it. This is the same logic that separates a genuine <a href="/blog/ai-marketing-systems-for-b2b">AI marketing system</a> from a collection of browser tabs.</p>
+
+    <h2>The five layers a one to three person team actually needs</h2>
+    <p>Each layer below owns a distinct job, absorbs a specific kind of machine work, and keeps a specific kind of human work. The third column is where lean teams get their capacity back. The fourth column is where they get themselves in trouble by assuming the model has it covered.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Layer</th>
+          <th>The job it owns</th>
+          <th>What AI does well here</th>
+          <th>What stays human</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Source of truth</td>
+          <td>Holds positioning, ICP, brand rules, proof points and pricing logic in one readable place</td>
+          <td>Retrieving and applying it consistently across every draft, every time, without being reminded</td>
+          <td>Writing it. A model cannot decide what the company stands for</td>
+        </tr>
+        <tr>
+          <td>Content engine</td>
+          <td>Turns one point of view into articles, posts, emails, landing pages and sales assets</td>
+          <td>First drafts, format variants, metadata, schema, translation, repurposing at volume</td>
+          <td>The point of view, the final read, and anything containing a number</td>
+        </tr>
+        <tr>
+          <td>Distribution</td>
+          <td>Puts the work in front of the right buyer on a schedule that survives a busy week</td>
+          <td>Scheduling, reformatting per channel, first-pass personalization across a list</td>
+          <td>Who gets approached, what gets said to them, and when to stop</td>
+        </tr>
+        <tr>
+          <td>Signal</td>
+          <td>Reports what buyers, competitors and AI answer engines are saying about your category</td>
+          <td>Monitoring and summarizing far more sources than a person can read in a week</td>
+          <td>Deciding which signal is worth acting on this quarter, and which is noise</td>
+        </tr>
+        <tr>
+          <td>Review gate</td>
+          <td>The checkpoint every public asset passes before it ships</td>
+          <td>Mechanical checks: broken links, banned phrases, missing schema, tone drift, unsourced claims</td>
+          <td>Judgment, factual accountability, and the signature on what goes out</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Five layers. That's the map. A team of one to three people can run all five, but only if each layer has one owner and one tool. The moment a layer has two of either, the team spends its scarcest resource, which is attention, on reconciliation instead of output.</p>
+
+    <h2>How to pick the one tool per layer</h2>
+    <p>The stack I'd build for a two-person B2B marketing team in 2026 looks unglamorous. Source of truth in Notion, or plain markdown files in a repo, because it has to be readable by both people and models. Content engine built on a frontier model, Claude or ChatGPT, wired to <em>read</em> that source of truth rather than having context pasted in per prompt. Distribution through whatever CRM and scheduler the company already pays for, HubSpot or Attio or Buffer, which matters far less than vendors want you to believe. Signal from one search tool such as Ahrefs or Semrush, plus a monthly run of twenty buyer-intent prompts across ChatGPT and Perplexity to check whether you're cited at all. Review gate: a checklist and a named human. That one costs nothing and gets skipped most often.</p>
+    <p>Three questions decide any tool. Does it own the layer end to end, or only one step inside it? Can it read your source of truth, or does someone have to re-explain the business every session? Can one person operate it during a bad week, with a launch running and a board deck due? A tool that fails the third question will be quietly abandoned by March, licence still active.</p>
+    <p>On the signal layer specifically, measurement has moved. Growth Memo's analysis of 1.2 million ChatGPT responses found the top ten domains capture roughly 46% of citations for a given topic, and the top thirty capture around 67%. Citation is winner-take-most, more consolidated than Google's results page ever was, which makes "are we in the cited set for our category" a measurable question rather than a vibe. If you want the mechanics of that, <a href="/blog/citation-is-the-new-ranking">citation is the new ranking</a> covers them.</p>
+
+    <h2>Where AI genuinely removes the grunt work</h2>
+    <p>AI earns its place on volume work: the tasks judged on correctness rather than taste. Drafting is the obvious example and the least interesting one. The compounding wins sit further down the list, in the work that never gets done on a lean team because there's no hour left for it.</p>
+    <p>Turning a 60-minute customer call into structured notes and three usable quotes. Generating twelve subject-line variants for a test that would otherwise ship with two. Keeping schema markup and metadata current across 40 pages instead of the 6 someone remembered. Clustering 800 keyword rows into topics. Reading every competitor release note so a human reads only the summary. None of that is glamorous and all of it used to be the reason a small team shipped one campaign a quarter instead of three.</p>
+    <p>There's also a category of pure rewriting that pays out disproportionately. The 2024 GEO research paper by Aggarwal et al. tested content-level edits against AI-generated answers and found that attaching named sources to factual claims lifted citation visibility by 132.4%, with no new information added to the page. Adding specific statistics lifted it 65.5%. That's a rewriting pass across an existing content library: exactly the kind of job a lean team never reaches and a model finishes in an afternoon.</p>
+
+    <h2>Where AI can't help, and pretending otherwise gets expensive</h2>
+    <p>Positioning is the first hard boundary. A model will generate a hundred value propositions in a minute and has no way of telling you which one a buyer will repeat back to you, unprompted, on a call six weeks later. That sentence comes out of customer conversations or it doesn't exist. Feed a model weak positioning and it will produce a great deal of consistent, well-formatted, on-brand content pointed in the wrong direction.</p>
+    <p>The pipeline number is the second. No system owns it. A person does, and that person has to be senior enough to say "this quarter's plan is wrong" out loud in a leadership meeting. The third is taste, which sounds soft until you watch a model produce something that's nearly on brand, in the way a photocopy is nearly the original. And the fourth is every conversation where trust is being built or spent: the partner call, the pricing negotiation, the reference customer you're asking for a favour.</p>
+    <p>This is the part of vendor demos that irritates me. Every one of them shows the drafting step, which is the cheapest step in the whole stack, and none of them show the twenty minutes afterwards where somebody who knows the business decides whether what came out is actually true. That twenty minutes is the review gate, and it's the layer nobody sells you because nobody can.</p>
+
+    <h2>Build it in this order, not the intuitive one</h2>
+    <p>Order matters more than tool choice, and the intuitive order is wrong. Most teams start with the content engine because it's the visible one, then spend a quarter generating volume against positioning nobody ever wrote down.</p>
+    <p><strong>Source of truth first</strong>, and give it a week. Two pages, not twenty: who you sell to, what you claim, what you can prove, what you never say. <strong>Review gate second</strong>, which is the one I'd argue hardest for. A gate built before the volume means the first weak draft gets caught by a checklist rather than by a customer. <strong>Content engine third</strong>, now that it has something correct to read and something to be checked against. <strong>Distribution fourth.</strong> <strong>Signal last</strong>, because monitoring you have no capacity to act on is a better-informed backlog and nothing more.</p>
+    <p>Roughly six weeks of part-time work for a team of two, and the sequencing survives a headcount change, which is the real test. If the team grows, the layers stay and the owners change, which is why the stack question and the <a href="/blog/how-to-structure-a-b2b-marketing-team">marketing team structure</a> question are the same question asked twice. If you want to locate where your team currently sits before rebuilding anything, the <a href="/blog/the-ai-maturity-ladder">AI maturity ladder</a> is the faster diagnostic.</p>
+
+    <blockquote>A lean team never wins on tool count. It wins because all five layers hold, and every one of them has a name attached to the judgment call. Build the system once. Let it run.</blockquote>
+
+    <p><strong>Keep reading:</strong> <a href="/blog/ai-marketing-systems-for-b2b">AI marketing systems for B2B</a> · <a href="/blog/how-to-structure-a-b2b-marketing-team">How to structure a B2B marketing team</a> · <a href="/blog/what-is-an-ai-marketing-system">What is an AI marketing system?</a> · <a href="/glossary">Glossary</a></p>
+
+    <section class="faq-block" aria-label="Frequently asked questions">
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>What is an AI marketing stack?</summary>
+        <p>An AI marketing stack is the set of layers a marketing team runs on, with AI embedded inside each layer rather than sitting beside it. For a lean B2B team there are five: a source of truth holding positioning, ICP, brand rules and proof; a content engine that turns one point of view into many assets; a distribution layer that puts the work in front of buyers on schedule; a signal layer that reports what buyers, competitors and AI answer engines are saying; and a review gate where a human decides what ships. The layers are the stack. The tools are interchangeable.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What tools does a small B2B marketing team actually need?</summary>
+        <p>One per layer, and no more. A readable source of truth (Notion, or plain markdown files in a repo), a frontier model wired to read that source of truth rather than being pasted context each time, whatever CRM and scheduler the company already pays for, one search and AI-visibility tool such as Ahrefs or Semrush plus a monthly prompt run across ChatGPT and Perplexity, and a review checklist with a named human attached. If two tools claim the same layer, one of them goes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can AI replace a marketing hire on a lean team?</summary>
+        <p>It replaces volume work, not judgment. AI absorbs drafting, variant generation, metadata maintenance, keyword clustering, call-note structuring and competitor monitoring, which is most of what a junior generalist spends the week on. It does not decide positioning, own the pipeline number, read a room, or tell you which of a hundred generated value propositions a buyer will repeat back on a call. A lean team with a good stack usually needs fewer people and more senior ones.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What should a lean B2B team build first?</summary>
+        <p>The source of truth, then the review gate, then the content engine, then distribution, then signal. Most teams start with the content engine because it is the visible one, and end up generating volume against positioning nobody wrote down. Building the gate before the volume means the first weak draft gets caught by a checklist rather than by a customer. Signal comes last, because monitoring you have no capacity to act on is just a better-informed backlog.</p>
+      </details>
+    </section>
+
+    <div class="share-block">
+      <span class="share-label">Share this article</span>
+      <div class="share-buttons">
+        <a class="share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ffocus4ward.co%2Fblog%2Fai-marketing-stack-for-lean-teams" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg></a>
+        <a class="share-btn" href="https://twitter.com/intent/tweet?text=AI%20marketing%20stack%20for%20lean%20B2B%20teams&url=https%3A%2F%2Ffocus4ward.co%2Fblog%2Fai-marketing-stack-for-lean-teams" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="share-btn" href="mailto:?subject=AI%20marketing%20stack%20for%20lean%20B2B%20teams&body=Thought you might find this useful: https%3A%2F%2Ffocus4ward.co%2Fblog%2Fai-marketing-stack-for-lean-teams" aria-label="Share by email"><svg viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zM20 6l-8 5-8-5h16zm0 12H4V8l8 5 8-5z"/></svg></a>
+        <button class="share-btn" onclick="(function(b){navigator.clipboard.writeText('https://focus4ward.co/blog/ai-marketing-stack-for-lean-teams').then(function(){var fb=b.parentElement.parentElement.querySelector('.share-fb');if(fb){fb.classList.add('on');setTimeout(function(){fb.classList.remove('on')},2000)}})})(this)" aria-label="Copy link"><svg viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg></button>
+      </div>
+      <span class="share-fb">Link copied</span>
+    </div>
+
+    <div class="cta-block">
+      <h3>Not sure which layer is actually missing?</h3>
+      <p>Every Focus4ward engagement starts with an audit. Two weeks to map what your stack covers, what it duplicates, where the manual hours are going, and the two or three builds that would give a lean team the most capacity back. You keep the map either way.</p>
+      <a href="/contact">Book a call</a>
+    </div>
+
+    <div class="author-card">
+      <img src="/images/miri.webp" alt="Miri Blum">
+      <div class="author-card-info">
+        <h4><a href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px" aria-label="Miri Blum on LinkedIn">Miri Blum <svg viewBox="0 0 24 24" style="width:15px;height:15px;fill:var(--pink);flex-shrink:0" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg></a></h4>
+        <p>Fractional CMO and AI Marketing Systems Builder · 18 years in B2B · Ex-AWS, Criteo, Brevo</p>
+      </div>
+    </div>
+  </div>
+</article>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <a href="/" class="foot-logo" aria-label="Focus4ward"><img src="/images/logo-light.webp" alt="Focus4ward"></a>
+        <p class="foot-tagline">Marketing leadership and AI systems for B2B growth.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col"><h5>Work</h5><ul><li><a href="/services">Services</a></li><li><a href="/results">Results</a></li><li><a href="/blog">Blog</a></li><li><a href="/glossary">Glossary</a></li></ul></div>
+        <div class="foot-col"><h5>About</h5><ul><li><a href="/about">About Miri</a></li><li><a href="/contact">Book a call</a></li><li><a href="/privacy">Privacy</a></li></ul></div>
+        <div class="foot-col"><h5>Reach me</h5><ul>
+          <li><a href="mailto:miri&#64;focus4ward.co">miri&#64;focus4ward.co</a></li>
+          <li><a class="foot-social" href="https://www.linkedin.com/in/miriblum/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.27c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zm14.5 12.27h-3v-5.6c0-3.37-4-3.11-4 0v5.6h-3v-11h3v1.76c1.4-2.59 7-2.78 7 2.48v6.76z"/></svg>LinkedIn</a></li>
+          <li>Paris · Works globally</li>
+          <li>English · French</li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-copy">© 2026 Focus4ward · Miri Blum</div>
+      <div class="foot-copy">Built in Paris</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){const open=document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',open)});
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('nav-open')));
+(function(){const bar=document.getElementById('scroll-prog');if(!bar)return;function upd(){const h=document.documentElement;const max=h.scrollHeight-h.clientHeight;bar.style.width=(max>0?(h.scrollTop/max)*100:0)+'%';}window.addEventListener('scroll',upd,{passive:true});upd();})();
+</script>
+</body>
+</html>
