@@ -55,6 +55,7 @@ exports.handler = async (event) => {
       `*Name:* ${d.name || '—'}   *Company:* ${d.company || '—'}`,
       `*Email:* ${d.email || '—'}   *Phone:* ${d.phone || '—'}`,
       `*Who:* ${d.role || '—'}   *Source:* ${d.source || '—'}`,
+      `*Traffic:* ${d.traffic_source || '—'}`,
       `*Message:* ${d.message || '—'}`,
     ];
     const r = await postToSlack(webhook, lines.join('\n'));
