@@ -17,6 +17,22 @@
    omit it cross-origin, and LinkedIn's in-app browser in particular often
    sends none at all. That case is labeled "direct/unknown" rather than a
    bare "direct" so it doesn't get read as confirmed direct traffic. */
+/* Channel bucketing (added 2026-09-19) — mirrors GA4's own default channel
+   grouping logic so a raw referring host reads as "Organic social
+   (linkedin.com)" instead of a bare hostname nobody wants to eyeball on a
+   Slack notification. window.F4W_CLASSIFY_HOST so contact.html's fallback
+   copy stays in sync with this one instead of drifting. */
+window.F4W_CLASSIFY_HOST = window.F4W_CLASSIFY_HOST || function (host) {
+  var h = host.toLowerCase();
+  var social = ['linkedin.com', 'facebook.com', 'instagram.com', 'twitter.com', 'x.com', 'threads.net', 'tiktok.com', 'youtube.com'];
+  var ai = ['chatgpt.com', 'chat.openai.com', 'perplexity.ai', 'claude.ai', 'gemini.google.com', 'copilot.microsoft.com'];
+  var search = ['google.', 'bing.com', 'duckduckgo.com', 'yahoo.com', 'ecosia.org'];
+  for (var i = 0; i < ai.length; i++) { if (h.indexOf(ai[i]) !== -1) return 'AI search (' + host + ')'; }
+  for (var i = 0; i < social.length; i++) { if (h.indexOf(social[i]) !== -1) return 'Organic social (' + host + ')'; }
+  for (var i = 0; i < search.length; i++) { if (h.indexOf(search[i]) !== -1) return 'Organic search (' + host + ')'; }
+  return 'Referral (' + host + ')';
+};
+
 (function () {
   var KEY = 'f4w_first_touch';
   try {
@@ -28,8 +44,8 @@
       var refHost = '';
       try { refHost = ref ? new URL(ref).hostname.replace(/^www\./, '') : ''; } catch (e) {}
       var val;
-      if (us) val = us + (um ? '/' + um : '');
-      else if (refHost && refHost !== location.hostname) val = refHost;
+      if (us) val = 'Campaign: ' + us + (um ? '/' + um : '');
+      else if (refHost && refHost !== location.hostname) val = window.F4W_CLASSIFY_HOST(refHost);
       else val = 'direct/unknown';
       sessionStorage.setItem(KEY, val);
     }
