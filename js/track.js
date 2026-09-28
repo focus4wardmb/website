@@ -50,6 +50,16 @@ window.F4W_CLASSIFY_HOST = window.F4W_CLASSIFY_HOST || function (host) {
       sessionStorage.setItem(KEY, val);
     }
   } catch (e) { /* storage blocked (private mode etc.) — contact page falls back to live computation */ }
+  /* Landing page + path (added 2026-09-28): which article brought the lead in,
+     and what they read before the form. Paired with GSC queries for that
+     landing page, it is the closest thing to "the keyword they typed" that
+     Google still allows (it hides organic keywords per visit). */
+  try {
+    if (!sessionStorage.getItem('f4w_landing')) sessionStorage.setItem('f4w_landing', location.pathname);
+    var path = JSON.parse(sessionStorage.getItem('f4w_path') || '[]');
+    if (path[path.length - 1] !== location.pathname) path.push(location.pathname);
+    sessionStorage.setItem('f4w_path', JSON.stringify(path.slice(-8)));
+  } catch (e) {}
 })();
 
 (function () {
