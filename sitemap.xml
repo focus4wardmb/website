@@ -432,4 +432,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://focus4ward.co/legal</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
+  <url>
+    <loc>https://focus4ward.co/fr/mentions-legales</loc>
+    <lastmod>2026-09-28</lastmod>
+  </url>
 </urlset>
